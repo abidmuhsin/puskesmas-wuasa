@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'dashimage': "url('src/assets/dashboard.jpeg')"
+        'dashboard': "url('src/assets/dashboard.jpeg')"
       }
     },
   },
