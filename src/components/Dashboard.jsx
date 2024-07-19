@@ -1,9 +1,9 @@
 const Dashboard =()=> {
     return (
-        <div className='relative max-w-full min-h-[75vh] bg-background bg-center bg-cover'>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500  opacity-60"></div>
+        <div className='relative max-w-full min-h-[75vh] bg-dashboard bg-center bg-cover'>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
             <div className='z-10 relative flex flex-col justify-end items-center h-[40vh] text-white gap-4'>
-                <h1 className='text-3xl font-bold'>Puskesmas Lore Utara</h1>
+                <h1 className='text-[40px] font-bold'>Puskesmas Lore Utara</h1>
                 <p className='w-[70%] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, nisi sit amet sodales dictum, ex metus lobortis ex, ac dictum odio quam ac nibh. In pellentesque lobortis posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla malesuada sapien et enim fringilla venenatis.</p>
             </div>
             <div className='z-10 relative text-white font-bold flex gap-9 justify-center mt-5 text-base'>

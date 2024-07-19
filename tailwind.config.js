@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'background': "url('src/assets/dashboard.jpeg')"
-      }
+        'dashboard': "url('src/assets/dashboard.jpeg')"
+      },
     },
   },
   plugins: [],

@@ -13,14 +13,14 @@ const Navbar =()=> {
                 </div>
                 <div className='flex gap-5 mx-16 items-center'>
                     <div className="flex items-center">
-                        <HiLocationMarker className="text-[7vh] rounded-md mx-3 border border-black p-1"/>
+                        <HiLocationMarker className="text-[7vh] rounded-md mx-3 border border-blue-800 p-1"/>
                         <div>
                             <h2 className="text-sm font-bold">Lokasi</h2>
                             <p className="text-sm">Jl. Yompudono No.09</p>
                         </div>
                     </div>
                     <div className="flex items-center ml-4">
-                        <BsFillTelephoneFill className="text-[7vh] rounded-md mx-3 border border-black p-2"/>
+                        <BsFillTelephoneFill className="text-[7vh] rounded-md mx-3 border border-blue-800 p-2"/>
                         <div>
                             <h2 className="text-sm font-bold">Kontak</h2>
                             <p className="text-sm">082345678912383</p>
