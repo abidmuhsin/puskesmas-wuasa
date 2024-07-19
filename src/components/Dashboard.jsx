@@ -1,6 +1,6 @@
 const Dashboard =()=> {
     return (
-        <div className='relative max-w-full min-h-[75vh] bg-dashboard bg-center bg-cover'>
+        <div className='relative max-w-full min-h-[75vh] bg-background bg-center bg-cover'>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500  opacity-60"></div>
             <div className='z-10 relative flex flex-col justify-end items-center h-[40vh] text-white gap-4'>
                 <h1 className='text-3xl font-bold'>Puskesmas Lore Utara</h1>
