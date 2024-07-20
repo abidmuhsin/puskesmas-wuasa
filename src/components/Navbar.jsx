@@ -2,6 +2,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi"; 
 import { AiFillContacts } from "react-icons/ai"; 
 import logoPuskesmas from '../assets/logo-puskesmas.png'
+import { Link } from "react-router-dom";
 
 const Navbar =()=> {
     return (
@@ -30,12 +31,12 @@ const Navbar =()=> {
             </div>
             <div className="max-w-full min-h-14 flex items-center">
                 <ul className="flex text-base font-bold ml-10 gap-16">
-                    <li><a href="">Beranda</a></li>
-                    <li><a href="">Tentang Kami</a></li>
-                    <li><a href="">Layanan</a></li>
-                    <li><a href="">Tim Media</a></li>
-                    <li><a href="">Artikel</a></li>
-                    <li><a href="">Kontak</a></li>
+                    <li><Link to="/home">Beranda</Link></li>
+                    <li><Link to="/aboutus">Tentang Kami</Link></li>
+                    <li><Link to="/layanan">Layanan</Link></li>
+                    <li><Link to="/tim_media">Tim Media</Link></li>
+                    <li><Link to="/artikel">Artikel</Link></li>
+                    <li><Link to="/kontak">Kontak</Link></li>
                 </ul>
             </div>
         </div>
