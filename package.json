@@ -13,12 +13,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
-<<<<<<< HEAD
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
-=======
+    "slick-carousel": "^1.8.1",
     "react-router-dom": "^6.25.1"
->>>>>>> 194bc3974f55e86608b9c5561c4a163543727550
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
