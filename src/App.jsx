@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Body />} /> {/* Rute untuk halaman utama */}
+        <Route path="/" element={<Body />} /> {/* Rute untuk halaman utama */}
         <Route path="/aboutus" element={<AboutUs />} /> {/* Rute untuk halaman About Us */}
         <Route path="/layanan" element={<Layanan />} />
         <Route path="/tim_media" element={<Tim_media />} />

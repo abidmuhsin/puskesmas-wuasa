@@ -30,13 +30,13 @@ const Navbar =()=> {
                 </div>
             </div>
             <div className="max-w-full min-h-14 flex items-center">
-                <ul className="flex text-base font-bold ml-10 gap-16">
-                    <li><Link to="/home">Beranda</Link></li>
-                    <li><Link to="/aboutus">Tentang Kami</Link></li>
-                    <li><Link to="/layanan">Layanan</Link></li>
-                    <li><Link to="/tim_media">Tim Media</Link></li>
-                    <li><Link to="/artikel">Artikel</Link></li>
-                    <li><Link to="/kontak">Kontak</Link></li>
+                <ul className="flex text-base font-bold">
+                    <li className="py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/">Beranda</Link></li>
+                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/aboutus">Tentang Kami</Link></li>
+                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/layanan">Layanan</Link></li>
+                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/tim_media">Tim Media</Link></li>
+                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/artikel">Artikel</Link></li>
+                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/kontak">Kontak</Link></li>
                 </ul>
             </div>
         </div>
