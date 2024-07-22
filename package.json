@@ -13,15 +13,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
-<<<<<<< HEAD
     "react-router-dom": "^6.25.1",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
-=======
+    "slick-carousel": "^1.8.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "react-router-dom": "^6.25.1"
->>>>>>> c66a18090f461b387f99d0a85c1b6dead80f272e
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
