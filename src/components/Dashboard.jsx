@@ -1,6 +1,7 @@
 import AutoSlider from '../container/AutoSlider.jsx';
 import content from '../assets/dashboard-content2.png'
 import { Link } from 'react-router-dom'
+import FadeInOnScroll from '../container/FadeInOnScroll.jsx'
 
 const Dashboard =()=> {
     return (
@@ -16,14 +17,17 @@ const Dashboard =()=> {
                 <button className='w-40 h-10 text-black bg-white rounded-md hover:bg-slate-600 hover:text-white'>Pelajari</button>
             </div> */}
             <div className='max-w-full min-h-[100vh] flex justify-left items-center'>
-                <div className='h-[70vh] flex flex-col justify-center items-left gap-4 px-20 '>
+                <div className='h-[70vh] w-[60%] flex flex-col justify-center items-left gap-4 px-20 '>
                     <h1 className='text-3xl text-blue-900 font-bold '>Puskesmas Lore Utara Desa Wuasa</h1>
                     <p className=''>Puskesmas Lore Utara adalah pusat kesehatan masyarakat yang berada di sekitar daerah desa wuasa</p>
                     <button className='flex items-left bg-blue-600 rounded-full w-fit px-8 py-3 text-white'><Link to="/aboutus">Selengkapnya</Link></button>
                 </div>
                 <div className='w-[50vh] h-[75vh] flex flex-row'>
-                    <img src={content} alt="" className='pt-20 bg-blue-500 rounded-tl-[15vh] border border-blue-500 border-4 absolute top-[90vh] right-15 w-[50vh] z-10'/>
-                    <div className='relative w-96 h-70 top-[10vh] right-[-10vh] bg-gradient-to-t from-blue-500 to-blue-400 rounded-br-[15vh] z-0'></div>
+                    <FadeInOnScroll>
+                        <img src={content} alt="" className='pt-20 bg-blue-500 rounded-tl-[15vh] border border-blue-500 border-4 absolute top-[90vh] right-[45vh] w-[50vh] z-10'/>
+                        <div className='relative w-96 h-70 top-[10vh] right-[-15vh] bg-gradient-to-t from-blue-500 to-blue-400 rounded-br-[15vh] z-0'></div>
+                    </FadeInOnScroll>
+                    
                 </div>
             </div>
            
