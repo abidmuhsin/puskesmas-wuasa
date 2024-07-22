@@ -11,8 +11,8 @@ const FadeInOnScroll = ({ children }) => {
   return (
     <div
       ref={ref}
-      className={`transition-opacity translate-x-1 duration-1000 ${
-        inView ? 'opacity-100' : 'opacity-0'
+      className={`transition-opacity duration-1000 transform ${
+        inView ? 'opacity-100 animate-fadeIn' : 'opacity-0 translate-y-0'
       }`}
     >
       {children}
