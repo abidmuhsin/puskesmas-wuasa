@@ -1,3 +1,9 @@
+import { AiTwotonePhone } from "react-icons/ai"; 
+import { BiPhone } from "react-icons/bi"; 
+import { CiLocationOn } from "react-icons/ci"; 
+import { AiFillYoutube } from "react-icons/ai"; 
+import { FaTiktok } from "react-icons/fa"; 
+import { AiOutlineInstagram } from "react-icons/ai"; 
 import { AiOutlineClockCircle } from "react-icons/ai"; 
 import { BsFillEarFill } from "react-icons/bs"; 
 import { FaTeeth } from "react-icons/fa"; 
@@ -14,6 +20,11 @@ import content from '../assets/dashboard-content2.png'
 import { Link } from 'react-router-dom'
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx'
 import { DataCard } from '../container/DataCard.jsx';
+import Cardmember from '../container/Cardmember.jsx'
+import Inul from '../assets/inul.jpg'
+import Alief from '../assets/alief.jpg'
+import Mas from '../assets/mas al.jpg'
+import Jema from '../assets/jema.jpg'
 
 const Dashboard =()=> {
     return (
@@ -64,7 +75,7 @@ const Dashboard =()=> {
                 </FadeInOnScroll>
                 
             </div>
-                <div className="bg-slate-300 max-w-full min-h-[30vh] flex items-center justify-evenly gap-8 mt-8">
+                <div className="bg-slate-300 max-w-full min-h-[30vh] flex items-center justify-evenly gap-8 mt-8 text-blue-900">
                     <FadeInOnScroll>
                         <DataCard
                         Image={<BiMedal/>}
@@ -91,7 +102,7 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                    
                 </div>
-                <div className="max-w-full min-h-[80vh] border border-b-1 flex flex-row justify-evenly items-center ml-16 mt-14">
+                <div className="max-w-full min-h-[80vh] border border-b-1 flex flex-row justify-evenly items-center ml-16 mt-14 text-blue-900">
                     <div className="flex flex-col justify-center items-left">
                         <FadeInOnScroll>
                         <h1 className="font-bold text-2xl">Puskesmas Lore Utara <br/> Menyediakan Layanan Medis</h1>
@@ -141,11 +152,85 @@ const Dashboard =()=> {
                         </div>
                         </FadeInOnScroll>
                     </div>
-                    
-                    
                 </div>
-            
-            
+                <div className="max-w-full text-blue-900">
+                    <FadeInOnScroll>
+                        <h1 className="text-center font-bold text-3xl mt-20">Tim Medis <br/> Puskesmas Lore Utara</h1>
+                        <p className="text-center text-lg mt-3 mb-9">Tim Medis Lore Utara yang sangat berkualitas</p>
+                        <div className="flex justify-center gap-8 ">
+                            <Cardmember
+                            Imagemember={Inul}
+                            Title='Inul Daratista'
+                            Description='Bendahara'
+                            />
+                            <Cardmember
+                            Imagemember={Alief}
+                            Title='Alief Surya Ningsih'
+                            Description='Sekretaris'
+                            />
+                            <Cardmember
+                            Imagemember={Mas}
+                            Title='Aldi Saputra'
+                            Description='Anggota 1'
+                            />
+                            <Cardmember
+                            Imagemember={Jema}
+                            Title='Jeremy Reinaldi Mansa'
+                            Description='Koordinator Desa'
+                            />
+                        </div>
+                        </FadeInOnScroll>
+                    </div>
+                    <FadeInOnScroll>
+                    <div className="font-bold text-xl h-32 w-full flex justify-between items-center bg-slate-300 mt-9">
+                        <h1 className="ml-16">Production by KKN 108 UNTAD Desa Wuasa</h1>
+                        <div className="flex mr-16 text-[9vh] gap-4">
+                            <AiOutlineInstagram className="bg-white p-2 rounded-3xl"/>
+                            <FaTiktok className="bg-white p-2 rounded-3xl"/>
+                            <AiFillYoutube className="bg-white p-2 rounded-3xl" />
+                        </div>
+                    </div>
+                    </FadeInOnScroll>
+                    <div className="flex justify-evenly">
+                        <div className="w-[15%] h-[30vh]] p-5 bg-slate-500">
+                            <h1>Link Cepat</h1>
+                            <ul>
+                                <li>Beranda</li>
+                                <li>Beranda</li>
+                                <li>Beranda</li>
+                                <li>Beranda</li>
+                                <li>Beranda</li>
+                            </ul>
+                        </div>
+                        <div className="w-[15%] h-[30vh] p-5 bg-slate-500">
+                            <h1>Halaman Lain</h1>
+                            <ul>
+                                <li>Contact</li>
+                                <li>Contact</li>
+                                <li>Contact</li>
+                                <li>Contact</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div className="w-[15%] h-[30vh] p-5 bg-slate-500">
+                            <div>
+                                <h1>Info Kontak</h1>
+                                <CiLocationOn />
+                            </div>
+                            <div className="">
+                                <h1>Lokasi</h1>
+                                <BiPhone />
+                            </div>
+                        </div>
+                        <div className="w-[15%] h-[20%] p-5 bg-slate-500">
+                            <h1>Panggilan Darurat</h1>
+                            <p>Segera Lakukan Panggilan Ketika Dalam Keadaan Darurat</p>
+                            <div>
+                                <AiTwotonePhone />
+                                <h1>08223456789</h1>
+                            </div>
+                        </div>
+                    </div>
         </div>
     )
 }
