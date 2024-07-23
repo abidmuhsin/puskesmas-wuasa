@@ -25,6 +25,7 @@ import Inul from '../assets/inul.jpg'
 import Alief from '../assets/alief.jpg'
 import Mas from '../assets/mas al.jpg'
 import Jema from '../assets/jema.jpg'
+import Footer from '../components/Footer.jsx'
 
 const Dashboard =()=> {
     return (
@@ -191,46 +192,55 @@ const Dashboard =()=> {
                         </div>
                     </div>
                     </FadeInOnScroll>
-                    <div className="flex justify-evenly">
-                        <div className="w-[15%] h-[30vh]] p-5 bg-slate-500">
-                            <h1>Link Cepat</h1>
-                            <ul>
-                                <li>Beranda</li>
+                    <FadeInOnScroll>
+                    <div className="flex justify-evenly my-16">
+                        <div className="w-[15%] flex flex-col h-[30vh]] p-5 gap-4">
+                            <h1 className="font-bold">Link Cepat</h1>
+                            <ul className="flex flex-col gap-2">
                                 <li>Beranda</li>
                                 <li>Beranda</li>
                                 <li>Beranda</li>
                                 <li>Beranda</li>
                             </ul>
                         </div>
-                        <div className="w-[15%] h-[30vh] p-5 bg-slate-500">
-                            <h1>Halaman Lain</h1>
-                            <ul>
-                                <li>Contact</li>
+                        <div className="w-[15%] h-[30vh] p-5 flex flex-col gap-4">
+                            <h1 className="font-bold">Halaman Lain</h1>
+                            <ul className="flex flex-col gap-2">
                                 <li>Contact</li>
                                 <li>Contact</li>
                                 <li>Contact</li>
                                 <li>Contact</li>
                             </ul>
                         </div>
-                        <div className="w-[15%] h-[30vh] p-5 bg-slate-500">
-                            <div>
-                                <h1>Info Kontak</h1>
-                                <CiLocationOn />
+                        <div className="w-[15%] h-[30vh] p-5  flex flex-col gap-5">
+                            <div className="flex gap-3 items-center">
+                                <CiLocationOn className="text-3xl text-center"/>
+                                <div>
+                                    <h1 className="text-base font-bold">Info Kontak</h1>
+                                    <p>0823456789</p>
+                                </div>
                             </div>
-                            <div className="">
-                                <h1>Lokasi</h1>
-                                <BiPhone />
+                            <div className="flex gap-3 items-center">
+                                <BiPhone className="text-3xl text-center" />
+                                <div>
+                                    <h1 className="text-base font-bold">Lokasi</h1>
+                                    <p>Jl. Yos Sudarso</p>
+                                </div>
+                                
                             </div>
                         </div>
-                        <div className="w-[15%] h-[20%] p-5 bg-slate-500">
-                            <h1>Panggilan Darurat</h1>
-                            <p>Segera Lakukan Panggilan Ketika Dalam Keadaan Darurat</p>
-                            <div>
-                                <AiTwotonePhone />
+                        <div className="w-[20%] h-[20%] p-5 flex flex-col gap-3">
+                            <h1 className="font-bold">Panggilan Darurat</h1>
+                            <p className="">Segera Lakukan Panggilan Ketika Dalam Keadaan Darurat</p>
+                            <div className="flex w-40 h-8 items-center bg-blue-900 text-white justify-center gap-2 font-bold ">
+                                <AiTwotonePhone className="text-xl"/>
                                 <h1>08223456789</h1>
                             </div>
                         </div>
                     </div>
+                    </FadeInOnScroll>
+                    <Footer/>
+                    
         </div>
     )
 }
