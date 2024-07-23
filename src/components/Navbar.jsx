@@ -31,12 +31,12 @@ const Navbar =()=> {
             </div>
             <div className="max-w-full min-h-14 flex items-center">
                 <ul className="flex text-base font-bold">
-                    <li className="py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/">Beranda</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/aboutus">Tentang Kami</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/layanan">Layanan</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/tim_media">Tim Media</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/artikel">Artikel</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/kontak">Kontak</Link></li>
+                <Link to="/"><li className="py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900">Beranda</li></Link>
+                <Link to="/aboutus"><li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900">Tentang Kami</li></Link>
+                <Link to="/layanan"><li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900">Layanan</li></Link>
+                <Link to="/tim_media"><li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900">Tim Media</li></Link>
+                <Link to="/artikel"><li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900">Artikel</li></Link>
+                <Link to="/kontak"><li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900">Kontak</li></Link>
                 </ul>
             </div>
         </div>

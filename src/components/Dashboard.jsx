@@ -1,3 +1,6 @@
+import { FaBook } from "react-icons/fa"; 
+import { GiHealthNormal } from "react-icons/gi"; 
+import { MdChildCare } from "react-icons/md"; 
 import { GoPerson } from "react-icons/go"; 
 import { CiHospital1 } from "react-icons/ci"; 
 import { BsFillPersonFill } from "react-icons/bs"; 
@@ -23,10 +26,28 @@ const Dashboard =()=> {
             </div> */}
             <div className='max-w-full min-h-[100vh] flex justify-left items-center'>
                 <FadeInOnScroll>
-                <div className='h-[70vh] w-[80%] flex flex-col justify-center items-left gap-4 px-20 '>
+                <div className='h-[70vh] w-[80%] flex flex-col justify-center items-left gap-4 px-20 text-blue-900'>
                     <h1 className='text-3xl text-blue-900 font-bold '>Puskesmas Lore Utara Desa Wuasa</h1>
                     <p className=''>Puskesmas Lore Utara adalah pusat kesehatan masyarakat yang berada di sekitar daerah desa wuasa</p>
                     <button className='flex items-left bg-blue-600 rounded-full w-fit px-8 py-3 text-white'><Link to="/aboutus">Selengkapnya</Link></button>
+                    <div className="flex flex-row gap-5 my-5">
+                        <div className="my-2">
+                            <GiHealthNormal className="text-[10vh]" />  
+                        </div>
+                        <div className="flex flex-col gap-3">
+                            <h1 className="font-bold text-2xl">Visi Puskesmas</h1>
+                            <p>Puskesmas Lore Utara adalah pusat kesehatan masyarakat yang berada di sekitar didaerah desa wuasa</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-row gap-5 my-5">
+                        <div className="my-2">
+                            <FaBook className="text-[10vh]" />  
+                        </div>
+                        <div className="flex flex-col gap-3">
+                            <h1 className="font-bold text-2xl">Misi Puskesmas</h1>
+                            <p>Puskesmas Lore Utara adalah pusat kesehatan masyarakat yang berada di sekitar didaerah desa wuasa</p>
+                        </div>
+                    </div>
                 </div>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
@@ -34,6 +55,7 @@ const Dashboard =()=> {
                         <img src={content} alt="" className='pt-20 bg-blue-500 rounded-tl-[15vh] border border-blue-500 border-4 absolute top-[2vh] right-[30vh] w-[50vh] z-10'/>
                         <div className='relative w-96 h-70 top-[10vh] right-[20vh] bg-gradient-to-t from-blue-500 to-blue-400 rounded-br-[15vh] z-0'>
                         </div>
+                        
                 </div>
                 </FadeInOnScroll>
                 
@@ -65,7 +87,31 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                    
                 </div>
-            
+                <div className="max-w-full min-h-[80vh] border border-b-1 flex flex-col justify-center items-left ml-10 mt-14">
+                    <h1 className="font-bold text-2xl">Puskesmas Lore Utara Menyediakan Layanan Medis</h1>
+                    <p>Ada beberapa layanan yang disediakan oleh Puskesmas Lore Utara Desa Wuasa</p>
+                    <button className="w-52 h-14 bg-blue-500 rounded-3xl text-white hover:bg-blue-800 my-5">Selengkapnya</button>
+                    <div className="flex flex-col gap-3 font-semibold mt-4">
+                        <div className="flex gap-3 items-center">
+                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                            <p>Pelayanan Ibu dan Anak</p>
+                        </div>
+                        <div className="flex gap-3 items-center ">
+                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                            <p>Pelayanan Ibu dan Anak</p>
+                        </div>
+                        <div className="flex gap-3 items-center ">
+                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                            <p>Pelayanan Ibu dan Anak</p>
+                        </div>
+                        <div className="flex gap-3 items-center ">
+                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                            <p>Pelayanan Ibu dan Anak</p>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
             
             
         </div>
