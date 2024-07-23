@@ -1,3 +1,7 @@
+import { AiOutlineClockCircle } from "react-icons/ai"; 
+import { BsFillEarFill } from "react-icons/bs"; 
+import { FaTeeth } from "react-icons/fa"; 
+import { FaHandHoldingHeart } from "react-icons/fa"; 
 import { FaBook } from "react-icons/fa"; 
 import { GiHealthNormal } from "react-icons/gi"; 
 import { MdChildCare } from "react-icons/md"; 
@@ -87,30 +91,58 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                    
                 </div>
-                <div className="max-w-full min-h-[80vh] border border-b-1 flex flex-col justify-center items-left ml-10 mt-14">
-                    <h1 className="font-bold text-2xl">Puskesmas Lore Utara Menyediakan Layanan Medis</h1>
-                    <p>Ada beberapa layanan yang disediakan oleh Puskesmas Lore Utara Desa Wuasa</p>
-                    <button className="w-52 h-14 bg-blue-500 rounded-3xl text-white hover:bg-blue-800 my-5">Selengkapnya</button>
-                    <div className="flex flex-col gap-3 font-semibold mt-4">
-                        <div className="flex gap-3 items-center">
-                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
-                            <p>Pelayanan Ibu dan Anak</p>
+                <div className="max-w-full min-h-[80vh] border border-b-1 flex flex-row justify-evenly items-center ml-16 mt-14">
+                    <div className="flex flex-col justify-center items-left">
+                        <FadeInOnScroll>
+                        <h1 className="font-bold text-2xl">Puskesmas Lore Utara <br/> Menyediakan Layanan Medis</h1>
+                        <p>Ada beberapa layanan yang disediakan oleh Puskesmas Lore Utara Desa Wuasa</p>
+                        <button className="w-52 h-14 bg-blue-500 rounded-3xl text-white hover:bg-blue-800 my-5">Selengkapnya</button>
+                        <div className="flex flex-col gap-5 font-semibold mt-4">
+                            <div className="flex gap-3 items-center">
+                                <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                                <p>Pelayanan Ibu dan Anak</p>
+                            </div>
+                            <div className="flex gap-3 items-center ">
+                                <FaHandHoldingHeart className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                                <p>Pelayanan Lanjut Usia</p>
+                            </div>
+                            <div className="flex gap-3 items-center ">
+                                <FaTeeth className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                                <p>Pelayanan Gigi dan Mulut</p>
+                            </div>
+                            <div className="flex gap-3 items-center ">
+                                <BsFillEarFill className="text-[8vh] rounded-full bg-blue-300 p-2" />
+                                <p>Pelayanan Telinga, Hidung, dan Tenggorokan</p>
+                            </div>
                         </div>
-                        <div className="flex gap-3 items-center ">
-                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
-                            <p>Pelayanan Ibu dan Anak</p>
-                        </div>
-                        <div className="flex gap-3 items-center ">
-                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
-                            <p>Pelayanan Ibu dan Anak</p>
-                        </div>
-                        <div className="flex gap-3 items-center ">
-                            <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
-                            <p>Pelayanan Ibu dan Anak</p>
-                        </div>
-                       
-                        
+                        </FadeInOnScroll>
                     </div>
+                    <div className="w-[40%] h-[55vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl ">
+                    <FadeInOnScroll>
+                        <h1 className="text-xl font-bold mb-2">Waktu Beroperasi</h1>
+                        <p className="mb-3">Puskesmas Lore Utara memiliki waktu beroperasi sebagai berikut:</p>
+                        <h1 className="font-bold">Senin - Kamis</h1>
+                        <div className="flex gap-2 items-center gap-2 my-1">
+                            <AiOutlineClockCircle className="text-lg gap-2" />
+                            <p> Pagi : 08.00 - 12.00</p>
+                        </div>
+                        <div className="flex gap-2 items-center gap-2 my-1">
+                            <AiOutlineClockCircle className="text-lg" />
+                            <p> Siang : 13.00 - 17.00</p>
+                        </div>
+                        <h1 className="font-bold">Jumat - Sabtu</h1>
+                        <div className="flex gap-2 items-center my-1">
+                            <AiOutlineClockCircle className="text-lg" />
+                            <p> Pagi : 08.00 - 12.00</p>
+                        </div>
+                        <div className="flex gap-2 items-center my-1">
+                            <AiOutlineClockCircle className="text-lg" />
+                            <p> Siang : 15.00 - 18.00</p>
+                        </div>
+                        </FadeInOnScroll>
+                    </div>
+                    
+                    
                 </div>
             
             
