@@ -52,7 +52,6 @@ const AutoSlider = () => {
           </button>
           <button className='bg-white hover:bg-slate-800 text-black hover:text-white font-bold py-2 px-4 rounded'>Pelajari</button>
         </div>
-        
       </div>
 
       {/* Dots */}
