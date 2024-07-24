@@ -2,11 +2,16 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiLocationMarker } from "react-icons/hi"; 
 import { AiFillContacts } from "react-icons/ai"; 
 import logoPuskesmas from '../assets/logo-puskesmas.png'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar =()=> {
+
+const location = useLocation();
+const isActive = (path) => location.pathname === path;
+
+
     return (
-        <div className='max-w-full border border-b-black text-blue-800'>
+        <div className='max-w-full border border-b-black text-blue-800 shadow-3xl'>
             <div className="flex justify-between h-[15vh]">
                 <div className='flex items-center mx-8 gap-2'>
                     <img src={logoPuskesmas} alt="" className='w-18 h-14' />
@@ -31,12 +36,12 @@ const Navbar =()=> {
             </div>
             <div className="max-w-full min-h-14 flex items-center">
                 <ul className="flex text-base font-bold">
-                    <li className="py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/">Beranda</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/aboutus">Tentang Kami</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/layanan">Layanan</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/tim_media">Tim Media</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/artikel">Artikel</Link></li>
-                    <li className="py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900"><Link to="/kontak">Kontak</Link></li>
+                <Link to="/"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Beranda</li></Link>
+                <Link to="/aboutus"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/aboutus') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tentang Kami</li></Link>
+                <Link to="/layanan"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/layanan') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Layanan</li></Link>
+                <Link to="/tim_media"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/tim_media') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tim Media</li></Link>
+                <Link to="/artikel"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/artikel') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Artikel</li></Link>
+                <Link to="/kontak"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/kontak') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Kontak</li></Link>
                 </ul>
             </div>
         </div>

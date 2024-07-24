@@ -7,6 +7,8 @@ import Layanan from './components/Layanan.jsx'
 import Tim_media from './components/Tim_media.jsx';
 import { Artikel } from './components/Artikel.jsx';
 import Kontak from './components/Kontak.jsx';
+import 'leaflet/dist/leaflet.css';
+
 
 function App() {
   return (

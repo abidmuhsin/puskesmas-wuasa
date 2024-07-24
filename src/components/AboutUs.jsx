@@ -1,9 +1,7 @@
 // src/pages/AboutUs.js
 import React from 'react';
 import { Cardmember } from '../container/Cardmember.jsx';
-import Image from '../assets/logo-puskesmas.png';
-import background1 from '../assets/dashboard.jpeg';
-import image1 from '../assets/dashboard2.jpeg';
+import Image from '../assets/logo-puskesmas.png'
 
 const AboutUs = () => {
     const image = [
