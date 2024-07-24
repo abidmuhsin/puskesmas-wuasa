@@ -30,7 +30,9 @@ import Footer from '../components/Footer.jsx'
 const Dashboard =()=> {
     return (
         <div className='relative max-w-full h-[170vh] bg-center bg-cover'>
+            <FadeInOnScroll>
             <AutoSlider/>
+            </FadeInOnScroll>
             {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
             <div className='z-10 relative flex flex-col justify-end items-center h-[40vh] text-white gap-4'>
                 <h1 className='text-[40px] font-bold'>Puskesmas Lore Utara</h1>
