@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Body from './section/Body'; // Asumsi Body adalah halaman utama
 import AboutUs from './components/AboutUs.jsx'; // Impor halaman About Us
 import Layanan from './components/Layanan.jsx'
-import TimMedis from './components/TimMedis.jsx';
 import { Artikel } from './components/Artikel.jsx';
 import Kontak from './components/Kontak.jsx';
 import 'leaflet/dist/leaflet.css';
@@ -22,7 +21,6 @@ function App() {
         <Route path="/" element={<Body />} /> {/* Rute untuk halaman utama */}
         <Route path="/aboutus" element={<AboutUs />} /> {/* Rute untuk halaman About Us */}
         <Route path="/layanan" element={<Layanan />} />
-        <Route path="/timMedis" element={<TimMedis />} />
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/kontak" element={<Kontak />} />
         <Route path="/semua" element={<Semua />} />

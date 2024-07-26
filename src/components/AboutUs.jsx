@@ -31,16 +31,16 @@ const AboutUs = () => {
     return (
         <div className="w-full h-screen">
             <FadeInOnScroll>
-            <div className='relative max-w-full min-h-[75vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
+            <div className='relative max-w-full min-h-[90vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
-                    <div className='z-10 relative flex flex-col justify-center items-center h-[75vh] text-white gap-4'>
-                        <div className='flex gap-9 justify-center max-w-xs min-h-[10vh] items-center'>
-                            <img src={about} alt="" className='w-32 h-32 mb-16 rounded-full'/>
-                            <img src={about2} alt="" className='w-32 h-32 rounded-full'/>
-                            <img src={about3} alt="" className='w-32 h-32 mb-16 rounded-full'/>
-                            <img src={about4} alt="" className='w-32 h-32 rounded-full'/>
+                    <div className='z-10 relative flex flex-col justify-center items-center h-[90vh] text-white gap-4'>
+                        <div className='flex gap-24 justify-center w-full min-h-[10vh] items-center'>
+                            <img src={about} alt="" className='w-48 h-60 mt-16 object-cover'/>
+                            <img src={about2} alt="" className='w-48 h-60 object-cover'/>
+                            <img src={about3} alt="" className='w-48 h-60 mt-16 object-cover '/>
+                            <img src={about4} alt="" className='w-48 h-60 object-cover'/>
                         </div>
-                        <h1 className='text-[40px] font-bold'>Sejarah Puskesmas</h1>
+                        <h1 className='text-[40px] font-bold mt-5'>Sejarah Puskesmas</h1>
                         <p className='w-[50%] text-center font-bold text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, nisi sit amet sodales di.</p>
                     </div>
             </div>
