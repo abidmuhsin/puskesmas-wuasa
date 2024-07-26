@@ -39,7 +39,7 @@ const isActive = (path) => location.pathname === path;
                 <Link to="/"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Beranda</li></Link>
                 <Link to="/aboutus"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/aboutus') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tentang Kami</li></Link>
                 <Link to="/layanan"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/layanan') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Layanan</li></Link>
-                <Link to="/tim_media"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/tim_media') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tim Media</li></Link>
+                <Link to="/timMedis"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/tim_medis') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tim Medis</li></Link>
                 <Link to="/artikel"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/artikel') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Artikel</li></Link>
                 <Link to="/kontak"><li className={`py-4 px-8  hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/kontak') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Kontak</li></Link>
                 </ul>

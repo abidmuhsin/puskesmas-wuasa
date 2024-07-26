@@ -32,6 +32,7 @@ const Dashboard =()=> {
         <div className='relative max-w-full h-[170vh] bg-center bg-cover'>
             <FadeInOnScroll>
             <AutoSlider/>
+            </FadeInOnScroll>
             {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
             <div className='z-10 relative flex flex-col justify-end items-center h-[40vh] text-white gap-4'>
                 <h1 className='text-[40px] font-bold'>Puskesmas Lore Utara</h1>
@@ -41,8 +42,9 @@ const Dashboard =()=> {
                 <button className='w-40 h-10 bg-blue-800 hover:bg-blue-950 rounded-md'>Kontak</button>
                 <button className='w-40 h-10 text-black bg-white rounded-md hover:bg-slate-600 hover:text-white'>Pelajari</button>
             </div> */}
-            <div className='max-w-full min-h-[70vh] flex'>
-                <div className='w=[50%] h-[70vh] flex flex-col justify-center items-left gap-5 px-20 '>
+            <div className='max-w-full min-h-[100vh] flex justify-left items-center'>
+                <FadeInOnScroll>
+                <div className='h-[70vh] w-[80%] flex flex-col justify-center items-left gap-4 px-20 text-blue-900'>
                     <h1 className='text-3xl text-blue-900 font-bold '>Puskesmas Lore Utara Desa Wuasa</h1>
                     <p className=''>Puskesmas Lore Utara adalah pusat kesehatan masyarakat yang berada di sekitar daerah desa wuasa</p>
                     <button className='flex items-left bg-blue-600 rounded-full w-fit px-8 py-3 text-white'><Link to="/aboutus">Selengkapnya</Link></button>
@@ -74,7 +76,6 @@ const Dashboard =()=> {
                         
                 </div>
                 </FadeInOnScroll>
-                
             </div>
                 <div className="bg-slate-300 max-w-full min-h-[30vh] flex items-center justify-evenly gap-8 mt-8 text-blue-900">
                     <FadeInOnScroll>

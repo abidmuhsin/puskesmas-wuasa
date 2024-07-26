@@ -4,10 +4,14 @@ import Navbar from './components/Navbar';
 import Body from './section/Body'; // Asumsi Body adalah halaman utama
 import AboutUs from './components/AboutUs.jsx'; // Impor halaman About Us
 import Layanan from './components/Layanan.jsx'
-import Tim_media from './components/Tim_media.jsx';
+import TimMedis from './components/TimMedis.jsx';
 import { Artikel } from './components/Artikel.jsx';
 import Kontak from './components/Kontak.jsx';
 import 'leaflet/dist/leaflet.css';
+import Semua from './components/Semua.jsx'
+import Staff from './components/Staff.jsx'
+import Dokter from './components/Dokter.jsx';
+import Perawat from './components/Perawat.jsx'
 
 
 function App() {
@@ -18,9 +22,14 @@ function App() {
         <Route path="/" element={<Body />} /> {/* Rute untuk halaman utama */}
         <Route path="/aboutus" element={<AboutUs />} /> {/* Rute untuk halaman About Us */}
         <Route path="/layanan" element={<Layanan />} />
-        <Route path="/tim_media" element={<Tim_media />} />
+        <Route path="/timMedis" element={<TimMedis />} />
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/kontak" element={<Kontak />} />
+        <Route path="/semua" element={<Semua />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/dokter" element={<Dokter />} />
+        <Route path="/perawat" element={<Perawat />} />
+
       </Routes>
     </Router>
   );
