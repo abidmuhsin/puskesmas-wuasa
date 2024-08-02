@@ -8,9 +8,6 @@ import { Artikel } from './components/Artikel.jsx';
 import Kontak from './components/Kontak.jsx';
 import 'leaflet/dist/leaflet.css';
 import Semua from './components/Semua.jsx'
-import Staff from './components/Staff.jsx'
-import Dokter from './components/Dokter.jsx';
-import Perawat from './components/Perawat.jsx'
 
 
 function App() {
@@ -24,10 +21,6 @@ function App() {
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/kontak" element={<Kontak />} />
         <Route path="/semua" element={<Semua />} />
-        <Route path="/staff" element={<Staff />} />
-        <Route path="/dokter" element={<Dokter />} />
-        <Route path="/perawat" element={<Perawat />} />
-
       </Routes>
     </Router>
   );

@@ -1,9 +1,6 @@
 // src/pages/AboutUs.js
 import React from 'react';
-import image1 from '../assets/mas al.jpg'
-import image2 from '../assets/inul.jpg'
-import image3 from '../assets/alief.jpg'
-import image4 from '../assets/jema.jpg'
+import images from '../assets/images.png'
 import Cardmember from '../container/Cardmember.jsx';
 import background1 from '../assets/logo-puskesmas.png'
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx';
@@ -26,7 +23,6 @@ const AboutUs = () => {
     const image = [
         background1
     ];
-    const images = [image1, image1, image1, image1];
 
     return (
         <div className="w-full h-screen">
@@ -51,74 +47,164 @@ const AboutUs = () => {
                 <p className='text-center w-[70%] '>Puskesmas Lore Utara adalah pusat keseluruhan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan sebagai konsultasi kesehatan dan pengobatan masyarakat</p>
             </div>
             </FadeInOnScroll>
-      <div className='flex flex-col justify-center items-center mt-10'>
+        <div className='flex flex-col justify-center items-center mt-10'>
         <FadeInOnScroll>
-        <h1 className='text-2xl font-bold'>Jajaran Manajemen</h1>
-      <div className='flex gap-5 justify-center mt-8'>
+        <h1 className='text-2xl font-bold'>Jajaran Administrator</h1>
+        </FadeInOnScroll>
+        <div className='flex gap-5 justify-center flex-wrap mt-8'>
+        
                 <Cardmember 
-                    Imagemember={image1}
-                    Title='John Doe'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Helvie Etmawati Gae, SKM'
+                    Description='Kepala Puskesmas Wuasa'/>
                 <Cardmember 
-                    Imagemember={image2}
-                    Title='John Cena'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Noli Tagora, SKM'
+                    Description='PJ Kecacingan'/>
                 <Cardmember 
-                    Imagemember={image3}
-                    Title='Jeremy Teti'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Stien Towaki, SKM'
+                    Description='PJ Batra'/>
                 <Cardmember 
-                    Imagemember={image4}
-                    Title='Abid Muhsin'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Nini Yunita Larapos, SKM'
+                    Description='PJ Klinik Gigi'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Yubtan Tangkoro'
+                    Description='Petugas Schistosomiasis'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Meni Pau'
+                    Description='Petugas Apotik'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Chobert Gatra Eleasar Abu'
+                    Description='PJ Loket'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Bernad Roreng'
+                    Description='Kesling'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Cerni Tolu'
+                    Description='Petugas Schistosomiasis'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Rosda'
+                    Description='Staf TU'/>
             </div>
-            </FadeInOnScroll>
       </div>
       <div className='flex flex-col justify-center items-center mt-10'>
-        <FadeInOnScroll>
-        <h1 className='text-2xl font-bold'>Jajaran DOkter</h1>
-      <div className='flex gap-5 justify-center mt-8'>
+        <h1 className='text-2xl font-bold'>Jajaran Dokter</h1>
+        <div className='flex gap-5 justify-center mt-8'>
                 <Cardmember 
-                    Imagemember={image1}
-                    Title='John Doe'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='drg. Diah Ayu Lestari A.M.'
+                    Description='Dokter Gigi'/>
                 <Cardmember 
-                    Imagemember={image2}
-                    Title='John Cena'
-                    Description='Kelas semua dan lain lain'/>
-                <Cardmember 
-                    Imagemember={image3}
-                    Title='Jeremy Teti'
-                    Description='Kelas semua dan lain lain'/>
-                <Cardmember 
-                    Imagemember={image4}
-                    Title='Abid Muhsin'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='dr. David Matthew Toding'
+                    Description='Dokter'/>
             </div>
-            </FadeInOnScroll>
       </div>
       <div className='flex flex-col justify-center items-center mt-10'>
         <FadeInOnScroll>
         <h1 className='text-2xl font-bold'>Jajaran Perawat</h1>
-      <div className='flex gap-5 justify-center mt-8'>
+        </FadeInOnScroll>
+      <div className='flex gap-5 justify-center flex-wrap mt-8'>
                 <Cardmember 
-                    Imagemember={image1}
-                    Title='John Doe'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Agus Salim Suali, S.Kep.Ns'
+                    Description='PJ Gudang Obat'/>
                 <Cardmember 
-                    Imagemember={image2}
-                    Title='John Cena'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Ramabay Palanti'
+                    Description='PJ Ispa'/>
                 <Cardmember 
-                    Imagemember={image3}
-                    Title='Jeremy Teti'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Menis Boka'
+                    Description='PJ Lansia'/>
                 <Cardmember 
-                    Imagemember={image4}
-                    Title='Abid Muhsin'
-                    Description='Kelas semua dan lain lain'/>
+                    Imagemember={images}
+                    Title='Irmayanti Lage, A.Md.Kep'
+                    Description='PJ Kesehatan Jiwa'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Paulus Massang, Amk'
+                    Description='Petugas Schistosomiasis'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Frida O. Wantuk, A.Md.Kep'
+                    Description='PJ PTM'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Meylani Selvia Lewo, S.Kep'
+                    Description='PJ Lansia'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Retslyn Mysna T., A.Md.Kep'
+                    Description='PJ Imunisasi dan Malaria'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Nia Duhriyah Sair, Amk'
+                    Description='PJ UKS'/>
             </div>
-            </FadeInOnScroll>
+      </div>
+      <div className='flex flex-col justify-center items-center mt-10'>
+        <FadeInOnScroll>
+        <h1 className='text-2xl font-bold'>Jajaran Bidan</h1>
+        </FadeInOnScroll>
+      <div className='flex gap-5 justify-center flex-wrap mt-8'>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Marlisna Tolibo, SST'
+                    Description='Kepala Ruangan Kamar Bersalin'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Ketty Wahyuni, S.Tr.Keb'
+                    Description='PJ KB'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Herliyanti Br. Sembiring, A.Md.Keb'
+                    Description='Pengelola JKN'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Firginia Nelloh, A.Md.Keb'
+                    Description='Staf Kamar Bersalin'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Sunariarti, S.Tr.Keb'
+                    Description='KTU dan PJ Hepatitis'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Agustin Susanti Agnes Lakengke, A.Md.Keb'
+                    Description='PJ HIV'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Agusdiana, A.Md.Keb'
+                    Description='PJ Kespro'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Rahal Y. Sandingku, A.Md.Keb'
+                    Description='Pengelola BOK dan PJ Remaja'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Darmi Susianti, A.Md.Keb'
+                    Description='PJ Ibu'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Martina Bonggadika, A.Md.Keb'
+                    Description='Bidan Desa Bongi-bongi'/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Vivin Sandini Boka, A.Md.Keb'
+                    Description='Bidan Koordinator Surveilens '/>
+                <Cardmember 
+                    Imagemember={images}
+                    Title='Nensi Indriani Mangki, A.Md.Keb'
+                    Description='PJ Anak'/>
+            </div>
       </div>
       <FadeInOnScroll>
                     <div className="font-bold text-xl h-32 w-full flex justify-between items-center bg-slate-300 mt-9">

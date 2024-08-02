@@ -11,7 +11,7 @@ const isActive = (path) => location.pathname === path;
 
 
     return (
-        <div className='max-w-full border border-b-black text-blue-800 shadow-3xl'>
+        <div className='max-w-full border border-b-black text-b lue-800 shadow-3xl'>
             <div className="flex justify-between h-[15vh]">
                 <div className='flex items-center mx-8 gap-2'>
                     <img src={logoPuskesmas} alt="" className='w-18 h-14' />

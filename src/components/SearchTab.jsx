@@ -1,20 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { items } from '../container/Data.jsx';
+import SearchResults from '../components/SearcResults.jsx';
 
 const SearchTab = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+
+  useEffect(() => {
+    const results = items.filter(item =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+  }, [searchTerm]);
 
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   };
 
-  const handleSearch = () => {
-    // Lakukan sesuatu dengan searchTerm
-    console.log('Searching for:', searchTerm);
-  };
-
   return (
-    <div className="flex justify-center m-9 w-96 border border-blue-600 rounded-xl">
-      <div className="w-full max-w-md">
+    <div className="flex flex-col w-full justify-center items-end m-10">
+      <div className="w-full max-w-md mb-6">
         <div className="relative">
           <input
             type="text"
@@ -23,14 +28,9 @@ const SearchTab = () => {
             value={searchTerm}
             onChange={handleInputChange}
           />
-          <button
-            onClick={handleSearch}
-            className="absolute right-0 top-0 h-full px-4 text-white bg-blue-500 rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"
-          >
-            Search
-          </button>
         </div>
       </div>
+      <SearchResults searchResults={searchResults} />
     </div>
   );
 };

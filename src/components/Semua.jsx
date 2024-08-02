@@ -1,5 +1,4 @@
 import React from 'react'
-import NavigationBar from '../container/NavigationBar'
 import SearchTab from '../components/SearchTab.jsx'
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx'
 import image1 from '../assets/mas al.jpg'
@@ -15,10 +14,9 @@ export const Semua = () => {
   return (
     <div className=''>
       <div className='flex justify-between'>
-        <NavigationBar/>
         <SearchTab/>
       </div>
-      <div className='flex flex-col justify-center items-center mt-10'>
+      {/* <div className='flex flex-col justify-center items-center mt-10'>
         <div className='flex gap-5 flex-wrap justify-center mt-8'>
                 <Cardmember 
                     Imagemember={image1}
@@ -85,7 +83,7 @@ export const Semua = () => {
                     Title='Abid Muhsin'
                     Description='Kelas semua dan lain lain'/>
             </div>
-            </div>
+            </div> */}
     </div>
   )
 }
