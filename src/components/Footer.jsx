@@ -66,7 +66,7 @@
 //         <div className='flex items-center mx-8 gap-2 h-20 justify-between'>
 //             <div className="flex items-center">
 //                 <img src={logoPuskesmas} alt="" className='w-18 h-14' />
-//                 <h1 className='text-2xl font-bold'>Puskesmas Lore Utara</h1>
+//                 <h1 className='text-2xl font-bold'>Puskesmas Wuasa</h1>
 //             </div>
 //             <h1 className="text-slate-600">Production by KKN 108 UNTAD Desa Wuasa</h1>
 //         </div>
@@ -120,14 +120,14 @@ const Footer = () => {
             <CiLocationOn className="text-3xl" />
             <div>
               <h1 className="text-base font-bold">Info Kontak</h1>
-              <p>0823456789</p>
+              <p>082293914600</p>
             </div>
           </div>
           <div className="flex gap-3 items-center">
             <BiPhone className="text-3xl" />
             <div>
               <h1 className="text-base font-bold">Lokasi</h1>
-              <p>Jl. Yos Sudarso</p>
+              <p>Jl. Garuda No.361</p>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ const Footer = () => {
           <p>Segera Lakukan Panggilan Ketika Dalam Keadaan Darurat</p>
           <div className="flex items-center bg-blue-900 text-white p-2 rounded-md font-bold">
             <AiTwotonePhone className="text-xl mr-2" />
-            <h1>08223456789</h1>
+            <h1>082293914600</h1>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-slate-200">
         <div className="flex items-center">
           <img src={logoPuskesmas} alt="Logo Puskesmas" className="w-18 h-14" />
-          <h1 className="text-2xl font-bold ml-2">Puskesmas Lore Utara</h1>
+          <h1 className="text-2xl font-bold ml-2">Puskesmas Wuasa</h1>
         </div>
         <h1 className="text-slate-600 mt-4 md:mt-0">Production by KKN 108 UNTAD Desa Wuasa</h1>
       </div>

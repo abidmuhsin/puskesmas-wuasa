@@ -235,7 +235,7 @@ export const Kontak = () => {
         </div>
       </FadeInOnScroll>
       
-      <div className="flex flex-col md:flex-row my-8 px-4 md:px-10">
+      <div className="flex flex-col md:flex-row flex-wrap my-8 ml-5">
         <div className="flex-1 flex flex-wrap gap-10 mb-8 md:mb-0">
           <FadeInOnScroll>
             <KontakCard 

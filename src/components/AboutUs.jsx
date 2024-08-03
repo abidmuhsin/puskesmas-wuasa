@@ -43,7 +43,7 @@ const AboutUs = () => {
             <FadeInOnScroll>
             <div className='w-full h-[30vh] flex flex-col justify-center items-center gap-3 mt-5 md:mt-0'>
                 <h1 className='font-bold text-2xl'>Visi</h1>
-                <p className='text-center w-[70%] text-base md:text-xs'>Puskesmas Lore Utara adalah pusat keseluruhan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan sebagai konsultasi kesehatan dan pengobatan masyarakat</p>
+                <p className='text-center w-[70%] text-base md:text-xs'>Puskesmas Wuasa adalah pusat keseluruhan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan sebagai konsultasi kesehatan dan pengobatan masyarakat</p>
             </div>
             </FadeInOnScroll>
         <div className='flex flex-col justify-center items-center mt-10'>

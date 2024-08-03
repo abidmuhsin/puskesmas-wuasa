@@ -113,9 +113,9 @@ const Navbar = () => {
           <Link to="/semua"><li className={`py-4 px-8 hover:bg-blue-900 ${isActive('/semua') ? 'bg-blue-800' : 'bg-gray-800'}`}>
             Tim Medis
           </li></Link>
-          <Link to="/artikel"><li className={`py-4 px-8 hover:bg-blue-900 ${isActive('/artikel') ? 'bg-blue-800' : 'bg-gray-800'}`}>
+          {/* <Link to="/artikel"><li className={`py-4 px-8 hover:bg-blue-900 ${isActive('/artikel') ? 'bg-blue-800' : 'bg-gray-800'}`}>
             Artikel
-          </li></Link>
+          </li></Link> */}
           <Link to="/kontak"> <li className={`py-4 px-8 hover:bg-blue-900 ${isActive('/kontak') ? 'bg-blue-800' : 'bg-gray-800'}`}>
             Kontak
           </li></Link>
@@ -127,7 +127,7 @@ const Navbar = () => {
           <Link to="/aboutus"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/aboutus') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tentang Kami</li></Link>
           <Link to="/layanan"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/layanan') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Layanan</li></Link>
           <Link to="/semua"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/semua') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tim Medis</li></Link>
-          <Link to="/artikel"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/artikel') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Artikel</li></Link>
+          {/* <Link to="/artikel"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/artikel') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Artikel</li></Link> */}
           <Link to="/kontak"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/kontak') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Kontak</li></Link>
         </ul>
       </div>
