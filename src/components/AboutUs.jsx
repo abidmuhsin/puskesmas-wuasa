@@ -96,7 +96,7 @@ const AboutUs = () => {
       </div>
       <div className='flex flex-col justify-center items-center mt-10'>
         <h1 className='text-2xl font-bold'>Jajaran Dokter</h1>
-        <div className='flex gap-5 justify-center mt-8'>
+        <div className='flex gap-5 justify-center mt-8 md:flex-row flex-col'>
                 <Cardmember 
                     Imagemember={images}
                     Title='drg. Diah Ayu Lestari A.M.'

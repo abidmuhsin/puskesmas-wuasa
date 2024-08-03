@@ -229,7 +229,7 @@ export const Kontak = () => {
           <div className='z-10 relative flex flex-col justify-center items-center h-full text-white gap-4 p-4'>
             <h1 className='text-3xl md:text-4xl lg:text-[40px] font-bold text-center'>Hubungi Kami</h1>
             <p className='w-full md:w-3/4 lg:w-1/2 text-center font-bold text-base md:text-lg'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, nisi sit amet sodales dictum, ex metus lobortis ex, ac dictum odio quam ac nibh. In pellentesque lobortis posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla malesuada sapien et enim fringilla venenatis.
+              
             </p>
           </div>
         </div>

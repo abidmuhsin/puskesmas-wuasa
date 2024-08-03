@@ -263,7 +263,7 @@ const Dashboard = () => {
                 <FadeInOnScroll>
                     <DataCard
                         Image={<GoPerson />}
-                        Title='12+'
+                        Title='33+'
                         Description='Dokter dan Staff'
                     />
                 </FadeInOnScroll>
@@ -308,23 +308,15 @@ const Dashboard = () => {
                         <h1 className="text-xl font-bold mb-2">Waktu Beroperasi</h1>
                         <p className="mb-3">Puskesmas Wuasa memiliki waktu beroperasi sebagai berikut:</p>
                         <div className="flex flex-col gap-2">
-                            <h1 className="font-bold">Senin - Kamis</h1>
+                            <h1 className="font-bold">Senin - Sabtu (Rawat Jalan & Rawat Inap)</h1>
                             <div className="flex gap-2 items-center">
                                 <AiOutlineClockCircle className="text-lg" />
-                                <p>Pagi : 08.00 - 12.00</p>
+                                <p>Pagi-Siang : 08.00 - 14.00</p>
                             </div>
+                            <h1 className="font-bold">Minggu (Rawat Inap)</h1>
                             <div className="flex gap-2 items-center">
                                 <AiOutlineClockCircle className="text-lg" />
-                                <p>Siang : 13.00 - 17.00</p>
-                            </div>
-                            <h1 className="font-bold">Jumat - Sabtu</h1>
-                            <div className="flex gap-2 items-center">
-                                <AiOutlineClockCircle className="text-lg" />
-                                <p>Pagi : 08.00 - 12.00</p>
-                            </div>
-                            <div className="flex gap-2 items-center">
-                                <AiOutlineClockCircle className="text-lg" />
-                                <p>Siang : 15.00 - 18.00</p>
+                                <p>24 Jam</p>
                             </div>
                         </div>
                     </FadeInOnScroll>
