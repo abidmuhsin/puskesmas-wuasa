@@ -1,10 +1,10 @@
 // src/App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.jsx';
 import Body from './section/Body'; // Asumsi Body adalah halaman utama
-import AboutUs from './components/AboutUs.jsx'; // Impor halaman About Us
+import AboutUs from './components/AboutUs.jsx';
 import Layanan from './components/Layanan.jsx'
-import { Artikel } from './components/Artikel.jsx';
+import Artikel from './components/Artikel.jsx';
 import Kontak from './components/Kontak.jsx';
 import 'leaflet/dist/leaflet.css';
 import Semua from './components/Semua.jsx'

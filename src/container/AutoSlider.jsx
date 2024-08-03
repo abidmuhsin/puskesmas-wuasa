@@ -44,8 +44,8 @@ const AutoSlider = () => {
 
       {/* Overlay Content */}
       <div className="absolute inset-0 flex items-center justify-center flex-col text-center text-white p-4">
-        <h1 className="text-4xl font-bold mb-4">Puskesmas Lore Utara</h1>
-        <p className="text-lg mb-8 w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis dictum nulla, vel placerat mi faucibus vel. Proin ut odio tempor, rhoncus orci at, aliquet ante..</p>
+        <h1 className="text-4xl font-bold mb-4">Puskesmas Wuasa</h1>
+        <p className="text-lg mb-8 w-[80%]">Puskesmas Wuasa adalah sebuah Pusat Kesehatan Masyarakat (Puskesmas) yang berlokasi di Wuasa, sebuah desa yang berada di wilayah Kabupaten Poso, Kecamatan Lore Utara, Indonesia..</p>
         <div className='flex gap-10'>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Kontak
