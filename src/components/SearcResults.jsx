@@ -31,7 +31,7 @@ const SearchResults = ({ searchResults }) => {
   return (
     <div className="w-full max-w-6xl overflow-hidden mx-auto mt-8">
       {searchResults.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:gap-6 gap-4">
           {searchResults.map(item => (
             <Cardmember
               key={item.id}
