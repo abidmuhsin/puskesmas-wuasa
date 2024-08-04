@@ -59,7 +59,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { HiLocationMarker } from 'react-icons/hi'; 
 import logoPuskesmas from '../assets/logo-puskesmas.png';
 import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css'; // Import CSS kustom untuk animasi
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -70,10 +70,10 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className='max-w-full border border-b-black bg-white text-blue-800 shadow-3xl sticky z-10 top-0 '>
+    <div className='w-full border border-b-black bg-white text-blue-800 shadow-3xl sticky z-10 top-0 '>
       <div className="flex justify-between items-center md:h-[15vh] h-[8vh] mx-8">
         <div className='flex items-center gap-2'>
-          <img src={logoPuskesmas} alt="Logo Puskesmas" className='md:w-18 w-10 md:h-14 h-8' />
+          <img src={logoPuskesmas} alt="Logo Puskesmas" className='md:w-20 w-10 md:h-16 h-8' />
           <h1 className='text-sm font-bold md:text-2xl'>Puskesmas <br/> Wuasa</h1>
         </div>
         <div className='hidden md:flex gap-5 items-center'>

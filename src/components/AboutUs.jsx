@@ -27,9 +27,9 @@ const AboutUs = () => {
     return (
         <div className="w-full h-screen">
             <FadeInOnScroll>
-            <div className='relative max-w-full min-h-[90vh] bg-cover bg-center overflow-x-hidden ' style={{ backgroundImage: `url(${background})`}}>
+            <div className='relative max-w-full md:min-h-[90vh] min-h-[50vh] bg-cover bg-center overflow-x-hidden ' style={{ backgroundImage: `url(${background})`}}>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
-                    <div className='z-10 relative flex flex-col justify-center items-center h-[90vh] text-center text-white gap-4'>
+                    <div className='z-10 relative flex flex-col justify-center items-center md:h-[90vh] h-[50vh] text-center text-white gap-4'>
                         <div className='hidden md:flex gap-24 justify-center w-full min-h-[10vh] items-center'>
                             <img src={about} alt="" className='w-48 h-60 mt-16 object-cover'/>
                             <img src={about2} alt="" className='w-48 h-60 object-cover'/>
@@ -43,7 +43,7 @@ const AboutUs = () => {
             <FadeInOnScroll>
             <div className='w-full h-[30vh] flex flex-col justify-center items-center gap-3 mt-5 md:mt-0'>
                 <h1 className='font-bold text-2xl'>Visi</h1>
-                <p className='text-center w-[70%] text-base md:text-xs'>Puskesmas Wuasa adalah pusat keseluruhan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan sebagai konsultasi kesehatan dan pengobatan masyarakat</p>
+                <p className='text-center w-[70%] text-sm md:text-base'>Puskesmas Wuasa adalah pusat keseluruhan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan sebagai konsultasi kesehatan dan pengobatan masyarakat</p>
             </div>
             </FadeInOnScroll>
         <div className='flex flex-col justify-center items-center mt-10'>
