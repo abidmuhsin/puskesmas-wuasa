@@ -67,33 +67,33 @@ export const Layanan = () => {
       </div>
       <div className='flex flex-col'>
         <div className='w-full flex h-[60vh] justify-center items-center gap-20'>
-            <div className='w-[50vh] h-[35vh] flex'>   
+            <div className='w-[50vh] h-[35vh] hidden md:flex'>   
               <img src={Poliumum} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44'/>
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>
             </div>        
-            <div className='w-[30%] flex flex-col gap-1'>
+            <div className='md:w-[30%] w-[80%] flex flex-col gap-1'>
               <p className='font-light text-lg'>Poli Umum</p>
               <h1 className='font-bold text-3xl'>Poli Umum</h1>
               <p className='text-base font-bold'>Poli Umum adalah Layanan kesehatan dasar yang disediakan di banyak klinik, pusat kesehatan, dan rumah sakit.</p>
             </div>
         </div>
         <div className='w-full flex h-[60vh] justify-center items-center gap-20'>
-            <div className='w-[30%] flex flex-col gap-1'>
+            <div className='md:w-[30%] w-[80%] flex flex-col gap-1'>
               <p className='font-light text-lg'>Poli Anak</p>
               <h1 className='font-bold text-3xl'>Poli Anak</h1>
               <p className='text-base font-bold'>Poli Anak adalah Layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit langsung oleh Dokter Spesialis Anak yang berkompeten di bidangnya</p>
             </div>
-            <div className='w-[50vh] h-[35vh] flex'>   
+            <div className='w-[50vh] h-[35vh] md:flex hidden'>   
               <img src={Polianak} alt="" className='bg-blue-500 rounded-tl-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute right-44 rounded-br-[15vh]'/>
               <div className='relative w-32 h-20 top-[30vh] right-10 bg-gradient-to-t from-blue-500 to-blue-400 rounded-br-[6vh] rounded-tl-[6vh] z-10'></div>
             </div>        
         </div>
         <div className='w-full flex h-[60vh] justify-center items-center gap-20'>
-            <div className='w-[50vh] h-[35vh] flex'>   
+            <div className='w-[50vh] h-[35vh] md:flex hidden'>   
               <img src={Poligigi} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44'/>
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>
             </div>
-            <div className='w-[30%] flex flex-col gap-1'>
+            <div className='md:w-[30%] w-[80%] flex flex-col gap-1'>
               <p className='font-light text-lg'>Poli Gigi</p>
               <h1 className='font-bold text-3xl'>Poli Gigi</h1>
               <p className='text-base font-bold'>Poli Gigi adalah salah satu jenis pelayanan kesehatan gigi yang bertujuan untuk menjaga kesehatan gigi dan mulut pasien secara umum</p>

@@ -35,7 +35,7 @@ const Dashboard =()=> {
             </FadeInOnScroll>
             <div className='max-w-full min-h-[100vh] flex justify-center items-center'>
                 <FadeInOnScroll>
-                <div className='h-[70vh] md:w-[80%] w-full flex flex-col justify-center items-left  gap-4 md:px-20 px-10 text-blue-900'>
+                <div className='h-[70vh] md:w-[80%] w-full md:mt-0 xs:mt-5 mt-16 flex flex-col justify-center items-left  gap-4 md:px-20 px-10 text-blue-900'>
                     <h1 className='text-3xl text-blue-900 font-bold '>Puskesmas Wuasa Desa Wuasa</h1>
                     <p className=''>Puskesmas Wuasa adalah pusat kesehatan masyarakat yang berada di sekitar daerah desa wuasa</p>
                     <button className='flex items-left bg-blue-600 rounded-full w-fit px-8 py-3 text-white'><Link to="/aboutus">Selengkapnya</Link></button>
@@ -120,7 +120,7 @@ const Dashboard =()=> {
                         </div>
                         </FadeInOnScroll>
                     </div>
-                    <div className="md:w-[40%] w-full md:h-[55vh] h-[39vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl md:mt-0 mt-10 ">
+                    <div className="md:w-[40%] w-full md:h-[55vh] h-[40vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl md:mt-0 mt-10 ">
                     <FadeInOnScroll>
                         <h1 className="text-xl font-bold mb-2">Waktu Beroperasi</h1>
                         <p className="mb-3">Puskesmas Wuasa memiliki waktu beroperasi sebagai berikut:</p>
