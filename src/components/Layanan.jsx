@@ -20,26 +20,26 @@ export const Layanan = () => {
   return (
     <div className='w-full h-screen'>
         <FadeInOnScroll>
-      <div className='relative max-w-full min-h-[75vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
+      <div className='relative max-w-full md:min-h-[73vh] min-h-[50vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
-              <div className='z-10 relative flex flex-col justify-center items-center h-[75vh] text-white gap-4'>
+              <div className='z-10 relative flex flex-col justify-center items-center md:h-[73vh] h-[50vh] text-white gap-4'>
                   <h1 className='text-[40px] font-bold'>Penyajian Layanan</h1>
                   <p className='w-[50%] text-center font-bold text-base'>Puskemas Lore Utara adalah pusat kesehatan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan untuk konsultasi kesehatan dan pengobatan masyarakat.</p>
               </div>
       </div>
       </FadeInOnScroll>
-      <div className=' max-w-full min-h-72 flex flex-col items-center justify-center'>
-        <h1 className='mt-10 font-bold text-[4vh]'>Galeri Layanan Puskesmas Desa Wuasa</h1>
-        <div className='flex w-[80%] h-[60vh] gap-8 justify-center items-center mr-56'>
-          <div className='w-[95vh]'>
+      <div className=' max-w-full md:min-h-[75vh] min-h-[55vh] flex flex-col items-center justify-center'>
+        <h1 className='mt-10 font-bold md:text-[4vh] text-[2vh]'>Galeri Layanan Puskesmas Desa Wuasa</h1>
+        <div className='flex md:w-[80%] w-full md:h-[60vh] h-[60vh] md:flex-row flex-col gap-8 justify-center items-start mt-10'>
+          <div className='md:w-[220vh] md:h-[40vh] w-[40vh] h-[20vh]'>
             <img src={kpuskesmas} alt="" className='rounded-3xl'/>
           </div>
-          <div className='flex gap-5 flex-col'>
-            <div className='flex w-[35vh] h-[25vh] gap-5'>
+          <div className='flex gap-5 flex-col md:w-full md:pl-0 pl-12'>
+            <div className='flex md:w-[35vh] md:h-[25vh] w-[17vh] gap-5'>
               <img src={loket} alt="" className='rounded-3xl'/>
               <img src={ruanginap} alt="" className='rounded-3xl' />
             </div>
-            <div className='flex w-[35vh] h-[25vh] gap-5'>
+            <div className='flex md:w-[35vh] md:h-[25vh] w-[17vh] gap-5'>
               <img src={ruanginap2} alt="" className='rounded-3xl'/>
               <img src={ruanginap3} alt="" className='rounded-3xl'/>
             </div>
@@ -66,7 +66,7 @@ export const Layanan = () => {
         </div>
       </div>
       <div className='flex flex-col'>
-        <div className='w-full flex h-[60vh] justify-center items-center gap-20'>
+        <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center md:gap-20 gap-5'>
             <div className='w-[50vh] h-[35vh] hidden md:flex'>   
               <img src={Poliumum} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44'/>
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>
@@ -77,7 +77,7 @@ export const Layanan = () => {
               <p className='text-base font-bold'>Poli Umum adalah Layanan kesehatan dasar yang disediakan di banyak klinik, pusat kesehatan, dan rumah sakit.</p>
             </div>
         </div>
-        <div className='w-full flex h-[60vh] justify-center items-center gap-20'>
+        <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
             <div className='md:w-[30%] w-[80%] flex flex-col gap-1'>
               <p className='font-light text-lg'>Poli Anak</p>
               <h1 className='font-bold text-3xl'>Poli Anak</h1>
@@ -88,7 +88,7 @@ export const Layanan = () => {
               <div className='relative w-32 h-20 top-[30vh] right-10 bg-gradient-to-t from-blue-500 to-blue-400 rounded-br-[6vh] rounded-tl-[6vh] z-10'></div>
             </div>        
         </div>
-        <div className='w-full flex h-[60vh] justify-center items-center gap-20'>
+        <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
             <div className='w-[50vh] h-[35vh] md:flex hidden'>   
               <img src={Poligigi} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44'/>
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>

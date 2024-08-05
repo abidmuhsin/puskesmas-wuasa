@@ -71,10 +71,10 @@ const Navbar = () => {
 
   return (
     <div className='w-full border border-b-black bg-white text-blue-800 shadow-3xl sticky z-10 top-0 '>
-      <div className="flex justify-between items-center md:h-[15vh] h-[8vh] mx-8">
+      <div className="flex justify-between items-center md:h-[10vh] h-[8vh] mx-8">
         <div className='flex items-center gap-2'>
-          <img src={logoPuskesmas} alt="Logo Puskesmas" className='md:w-20 w-10 md:h-16 h-8' />
-          <h1 className='text-sm font-bold md:text-2xl'>Puskesmas <br/> Wuasa</h1>
+          <img src={logoPuskesmas} alt="Logo Puskesmas" className='md:w-14 w-10 md:h-12 h-8' />
+          <h1 className='text-sm font-bold md:text-xl'>Puskesmas Wuasa</h1>
         </div>
         <div className='hidden md:flex gap-5 items-center'>
           <div className="flex items-center">
@@ -100,7 +100,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} bg-gray-800 text-white`}>
-        <ul className="flex flex-col text-base font-bold relative z-10">
+        <ul className="flex flex-col text-base font-bold relative z-20">
         <Link to="/"><li className={`py-4 px-8 hover:bg-blue-900 ${isActive('/') ? 'bg-blue-800' : 'bg-gray-800'}`}>
             Beranda
           </li></Link>
@@ -121,8 +121,8 @@ const Navbar = () => {
           </li></Link>
         </ul>
       </div>
-      <div className='hidden md:flex max-w-full min-h-14 items-center'>
-        <ul className="flex text-base font-bold">
+      <div className='hidden md:flex max-w-full min-h-15 items-center'>
+        <ul className="flex text-sm font-bold">
           <Link to="/"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Beranda</li></Link>
           <Link to="/aboutus"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/aboutus') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Tentang Kami</li></Link>
           <Link to="/layanan"><li className={`py-4 px-8 hover:bg-blue-900 hover:text-white text-blue-900 ${isActive('/layanan') ? 'bg-blue-800 text-white' : 'bg-white'}`}>Layanan</li></Link>

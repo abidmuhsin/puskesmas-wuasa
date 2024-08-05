@@ -42,9 +42,9 @@ export const Kontak = () => {
   return (
     <div className="w-full h-screen">
       <FadeInOnScroll>
-      <div className='relative max-w-full min-h-[75vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
+      <div className='relative max-w-full min-h-[73vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
-              <div className='z-10 relative flex flex-col justify-center items-center h-[75vh] text-white gap-4'>
+              <div className='z-10 relative flex flex-col justify-center items-center h-[73vh] text-white gap-4'>
                   <h1 className='text-[40px] font-bold'>Hubungi Kami</h1>
                   <p className='w-[50%] text-center font-bold text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, nisi sit amet sodales dictum, ex metus lobortis ex, ac dictum odio quam ac nibh. In pellentesque lobortis posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla malesuada sapien et enim fringilla venenatis.</p>
               </div>
