@@ -1,8 +1,10 @@
 import React from 'react';
 import Modal from 'react-modal';
+import FadeInOnScroll from '../container/FadeInOnScroll.jsx';
 
 const MemberModal = ({ isOpen, onRequestClose, member }) => {
   return (
+    <FadeInOnScroll>
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
@@ -28,6 +30,7 @@ const MemberModal = ({ isOpen, onRequestClose, member }) => {
         )}
       </div>
     </Modal>
+    </FadeInOnScroll>
   );
 };
 

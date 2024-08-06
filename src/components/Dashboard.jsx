@@ -94,12 +94,14 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                    
                 </div>
-                <div className="max-w-full min-h-[80vh] border border-b-1 flex md:flex-row flex-col justify-evenly items-center md:ml-16 ml-3 mt-14 text-blue-900">
+                <div className="max-w-full min-h-[80vh] border border-b-1 flex md:flex-row flex-col justify-evenly items-center md:ml-16 md:ml-3 ml-0 mt-14 text-blue-900">
                     <div className="flex flex-col justify-center items-left">
                         <FadeInOnScroll>
                         <h1 className="font-bold text-2xl">Puskesmas Wuasa <br/> Menyediakan Layanan Medis</h1>
                         <p>Ada beberapa layanan yang disediakan oleh Puskesmas Wuasa Desa Wuasa</p>
                         <button className="w-52 h-14 bg-blue-500 rounded-3xl text-white hover:bg-blue-800 my-5">Selengkapnya</button>
+                        </FadeInOnScroll>
+                        <FadeInOnScroll>
                         <div className="flex flex-col gap-5 font-semibold mt-4">
                             <div className="flex gap-3 items-center">
                                 <MdChildCare className="text-[8vh] rounded-full bg-blue-300 p-2" />
@@ -120,24 +122,32 @@ const Dashboard =()=> {
                         </div>
                         </FadeInOnScroll>
                     </div>
-                    <div className="md:w-[40%] w-full md:h-[55vh] h-[40vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl md:mt-0 mt-10 ">
-                    <FadeInOnScroll>
+                    <div className="md:w-[40%] w-full md:h-[60vh] h-[40vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl md:mt-0 mt-10 ">
+                        <FadeInOnScroll>
                         <h1 className="text-xl font-bold mb-2">Waktu Beroperasi</h1>
                         <p className="mb-3">Puskesmas Wuasa memiliki waktu beroperasi sebagai berikut:</p>
+                        </FadeInOnScroll>
+                        <FadeInOnScroll>
                         <h1 className="font-bold">Senin - Kamis</h1>
                         <div className="flex gap-2 items-center gap-2 my-1">
                             <AiOutlineClockCircle className="text-lg gap-2" />
                             <p> Pagi : 08.00 - 12.00</p>
                         </div>
+                        </FadeInOnScroll>
+                        <FadeInOnScroll>
                         <div className="flex gap-2 items-center gap-2 my-1">
                             <AiOutlineClockCircle className="text-lg" />
                             <p> Siang : 13.00 - 17.00</p>
                         </div>
+                        </FadeInOnScroll>
+                        <FadeInOnScroll>
                         <h1 className="font-bold">Jumat - Sabtu</h1>
                         <div className="flex gap-2 items-center my-1">
                             <AiOutlineClockCircle className="text-lg" />
                             <p> Pagi : 08.00 - 12.00</p>
                         </div>
+                        </FadeInOnScroll>
+                        <FadeInOnScroll>
                         <div className="flex gap-2 items-center my-1">
                             <AiOutlineClockCircle className="text-lg" />
                             <p> Siang : 15.00 - 18.00</p>
@@ -149,6 +159,8 @@ const Dashboard =()=> {
                     <FadeInOnScroll>
                         <h1 className="text-center font-bold text-3xl mt-20">Tim Medis <br/> Puskesmas Wuasa</h1>
                         <p className="text-center text-lg mt-3 mb-9">Tim Medis Lore Utara yang sangat berkualitas</p>
+                    </FadeInOnScroll>
+                    <FadeInOnScroll>
                         <div className="flex flex-row flex-wrap justify-center gap-8 ">
                             <Cardmember
                             Imagemember={Inul}

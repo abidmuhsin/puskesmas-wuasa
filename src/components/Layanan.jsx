@@ -16,11 +16,12 @@ export const Layanan = () => {
   const background = [
     dashboard
   ]
+  
 
   return (
     <div className='w-full h-screen'>
         <FadeInOnScroll>
-      <div className='relative max-w-full md:min-h-[73vh] min-h-[50vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
+      <div className='relative max-w-full md:min-h-[75vh] min-h-[50vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})`}}>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>
               <div className='z-10 relative flex flex-col justify-center items-center md:h-[73vh] h-[50vh] text-white gap-4'>
                   <h1 className='text-[40px] font-bold'>Penyajian Layanan</h1>
@@ -29,27 +30,42 @@ export const Layanan = () => {
       </div>
       </FadeInOnScroll>
       <div className=' max-w-full md:min-h-[75vh] min-h-[55vh] flex flex-col items-center justify-center'>
+        <FadeInOnScroll>
         <h1 className='mt-10 font-bold md:text-[4vh] text-[2vh]'>Galeri Layanan Puskesmas Desa Wuasa</h1>
+        </FadeInOnScroll>
         <div className='flex md:w-[80%] w-full md:h-[60vh] h-[60vh] md:flex-row flex-col gap-8 justify-center items-start mt-10'>
           <div className='md:w-[220vh] md:h-[40vh] w-[40vh] h-[20vh]'>
+            <FadeInOnScroll>
             <img src={kpuskesmas} alt="" className='rounded-3xl'/>
+            </FadeInOnScroll>
           </div>
           <div className='flex gap-5 flex-col md:w-full md:pl-0 pl-12'>
+            <FadeInOnScroll>
             <div className='flex md:w-[35vh] md:h-[25vh] w-[17vh] gap-5'>
               <img src={loket} alt="" className='rounded-3xl'/>
               <img src={ruanginap} alt="" className='rounded-3xl' />
             </div>
+            </FadeInOnScroll>
+            <FadeInOnScroll>
             <div className='flex md:w-[35vh] md:h-[25vh] w-[17vh] gap-5'>
               <img src={ruanginap2} alt="" className='rounded-3xl'/>
               <img src={ruanginap3} alt="" className='rounded-3xl'/>
             </div>
+            </FadeInOnScroll>
           </div>
         </div>
       </div>
       <div className='flex flex-col items-center justify-center gap-2 mt-10 bg-slate-200'>
+        <FadeInOnScroll>
         <p className='text-lg mt-5'>Jenis Layanan</p>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
         <h1 className='font-bold text-2xl '>Jenis Layanan Puskesmas Desa Wuasa</h1>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
         <h2 className='font-semibold mb-5'>Terdapat macam macam layanan yang ada di di puskesmas desa wuasa</h2>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
         <div className='flex gap-8 flex-wrap justify-center mb-10'>
           <CardLayanan
           image={Poliumum}
@@ -64,10 +80,12 @@ export const Layanan = () => {
           title='Poli Gigi'
           deskripsi='Poli Umum adalah tempat pengobatan'/>
         </div>
+        </FadeInOnScroll>
       </div>
       <div className='flex flex-col'>
+        <FadeInOnScroll>
         <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center md:gap-20 gap-5'>
-            <div className='w-[50vh] h-[35vh] hidden md:flex'>   
+            <div className='w-[50vh] h-[35vh] hidden md:flex'> 
               <img src={Poliumum} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44'/>
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>
             </div>        
@@ -77,6 +95,8 @@ export const Layanan = () => {
               <p className='text-base font-bold'>Poli Umum adalah Layanan kesehatan dasar yang disediakan di banyak klinik, pusat kesehatan, dan rumah sakit.</p>
             </div>
         </div>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
         <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
             <div className='md:w-[30%] w-[80%] flex flex-col gap-1'>
               <p className='font-light text-lg'>Poli Anak</p>
@@ -88,6 +108,8 @@ export const Layanan = () => {
               <div className='relative w-32 h-20 top-[30vh] right-10 bg-gradient-to-t from-blue-500 to-blue-400 rounded-br-[6vh] rounded-tl-[6vh] z-10'></div>
             </div>        
         </div>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
         <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
             <div className='w-[50vh] h-[35vh] md:flex hidden'>   
               <img src={Poligigi} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44'/>
@@ -99,6 +121,7 @@ export const Layanan = () => {
               <p className='text-base font-bold'>Poli Gigi adalah salah satu jenis pelayanan kesehatan gigi yang bertujuan untuk menjaga kesehatan gigi dan mulut pasien secara umum</p>
             </div>        
         </div>
+        </FadeInOnScroll>
       </div>
       <Footer/>
     </div>

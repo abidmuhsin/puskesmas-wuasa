@@ -51,7 +51,6 @@ const AboutUs = () => {
         <h1 className='text-2xl font-bold'>Jajaran Administrator</h1>
         </FadeInOnScroll>
         <div className='flex gap-5 justify-center flex-wrap mt-8 '>
-        
                 <Cardmember 
                     Imagemember={images}
                     Title='Helvie Etmawati Gae, SKM'
@@ -91,7 +90,7 @@ const AboutUs = () => {
                 <Cardmember 
                     Imagemember={images}
                     Title='Rosda'
-                    Description='Staf TU'/>
+                    Description='Staf TU'/>    
             </div>
       </div>
       <div className='flex flex-col justify-center items-center mt-10'>

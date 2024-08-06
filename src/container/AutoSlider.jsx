@@ -25,7 +25,7 @@ const AutoSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[73vh] overflow-hidden">
+    <div className="relative w-full h-[75vh] overflow-hidden">
       
       {/* Slider Background */}
       <div
