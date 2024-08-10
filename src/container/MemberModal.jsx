@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx';
 
 const MemberModal = ({ isOpen, onRequestClose, member }) => {
+
+  console.log(member);
   return (
     <FadeInOnScroll>
     <Modal

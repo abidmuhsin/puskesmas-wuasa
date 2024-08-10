@@ -56,14 +56,9 @@ import MemberModal from '../container/MemberModal.jsx';
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx';
 
 const SearchResults = ({ searchResults }) => {
-  const [selectedMember, setSelectedMember] = useState(null);
 
   const handleCardClick = (member) => {
     setSelectedMember(member);
-  };
-
-  const closeModal = () => {
-    setSelectedMember(null);
   };
 
   return (
@@ -77,6 +72,7 @@ const SearchResults = ({ searchResults }) => {
               Imagemember={item.image}
               Title={item.name}
               Description={item.description}
+              Jabatan={item.jabatan}
               onClick={() => handleCardClick(item)}
             />
             </FadeInOnScroll>
@@ -85,11 +81,11 @@ const SearchResults = ({ searchResults }) => {
       ) : (
         <p className="text-gray-500 text-center">No results found</p>
       )}
-      <MemberModal
+      {/* <MemberModal
         isOpen={!!selectedMember}
         onRequestClose={closeModal}
         member={selectedMember}
-      />
+      /> */}
     </div>
   );
 };

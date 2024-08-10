@@ -5,21 +5,26 @@ import { AiTwotonePhone } from "react-icons/ai";
 import { BiPhone } from "react-icons/bi"; 
 import { CiLocationOn } from "react-icons/ci"; 
 import { AiFillYoutube } from "react-icons/ai"; 
-import { FaTiktok } from "react-icons/fa"; 
+import { FaDribbbleSquare, FaTiktok } from "react-icons/fa"; 
 import { AiOutlineInstagram } from "react-icons/ai"; 
 
 const Footer = () => {
   return (
     <div>
         <div className="font-bold text-xl md:h-32 h-24 w-full flex flex-col md:flex-row justify-between items-center bg-slate-300 mt-9">
+            <FadeInOnScroll>
             <h1 className="ml-5 md:text-xl text-sm md:ml-16 mt-4 md:mt-0">Production by KKN 108 UNTAD Desa Wuasa</h1>
+            </FadeInOnScroll>
+            <FadeInOnScroll>
             <div className="flex md:mr-16 mr-0 md:text-[9vh] text-[5vh] gap-4 mb-2 md:mb-0">
                 <AiOutlineInstagram className="bg-white p-2 rounded-3xl"/>
                 <FaTiktok className="bg-white p-2 rounded-3xl"/>
                 <AiFillYoutube className="bg-white p-2 rounded-3xl" />
             </div>
+            </FadeInOnScroll>
         </div>
-        <div className="flex md:justify-evenly justify-center flex-wrap my-16">
+        <div className="flex md:justify-evenly justify-center flex-wrap my-16 ">
+            <FadeInOnScroll>
             <div className="md:w-[15%] w-[35%] flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base">
                 <h1 className="font-bold">Link Cepat</h1>
                 <ul className="flex flex-col gap-2">
@@ -29,16 +34,22 @@ const Footer = () => {
                     <li>Beranda</li>
                 </ul>
             </div>
+            </FadeInOnScroll>
             <div className="md:w-[15%] w-[35%] h-[30vh] p-5 flex flex-col gap-4 text-sm md:text-base">
+                <FadeInOnScroll>
                 <h1 className="font-bold">Halaman Lain</h1>
+                </FadeInOnScroll>
+                <FadeInOnScroll>
                 <ul className="flex flex-col gap-2 ">
                     <li>Contact</li>
                     <li>Contact</li>
                     <li>Contact</li>
                     <li>Contact</li>
                 </ul>
+                </FadeInOnScroll>
             </div>
             <div className="md:w-[15%] w-[35%] h-[30vh] p-5  flex flex-col gap-5 text-sm md:text-base">
+                <FadeInOnScroll>
                 <div className="flex gap-3 items-center md:flex-row flex-col">
                     <CiLocationOn className="text-3xl text-center"/>
                     <div>
@@ -46,31 +57,50 @@ const Footer = () => {
                         <p>082293914600</p>
                     </div>
                 </div>
+                </FadeInOnScroll>
                 <div className="flex gap-3 items-center md:flex-row flex-col">
+                    <FadeInOnScroll>
                     <BiPhone className="text-3xl text-center" />
+                    </FadeInOnScroll>
+                    <FadeInOnScroll>
                     <div>
                         <h1 className="text-base font-bold">Lokasi</h1>
                         <p>Jl. Garuda No. 361</p>
                     </div>
+                    </FadeInOnScroll>
                 </div>
             </div>
             <div className="md:w-[20%] w-[35%] h-[20%] p-5 flex flex-col gap-3 text-sm md:text-base">
+                <FadeInOnScroll>
                 <h1 className="font-bold">Panggilan Darurat</h1>
+                </FadeInOnScroll>
+                <FadeInOnScroll>
                 <p className="">Segera Lakukan Panggilan Ketika Dalam Keadaan Darurat</p>
+                </FadeInOnScroll>
+                <FadeInOnScroll>
                 <div className="flex w-40 h-8 items-center bg-blue-900 text-white justify-center gap-2 font-bold ">
                     <AiTwotonePhone className="text-xl"/>
                     <h1>082293914600</h1>
                 </div>
+                </FadeInOnScroll>
             </div>
         </div>           
         <div className='flex items-center mx-8 gap-2 h-20 justify-between md:flex-row flex-col'>
             <div className="flex items-center">
+            <FadeInOnScroll>
                 <img src={logoPuskesmas} alt="" className='w-18 h-14' />
+                </FadeInOnScroll>
+                <FadeInOnScroll>
                 <h1 className='text-2xl font-bold'>Puskesmas Wuasa</h1>
+                </FadeInOnScroll>
             </div>
-            <h1 className="text-slate-600 md:pb-0 pb-2">Production by KKN 108 UNTAD Desa Wuasa</h1>
+            <FadeInOnScroll>
+            <div className='flex text-slate-600 mb-2'>
+                <h1 className="">Production by KKN 108 UNTAD Desa Wuasa</h1>
+            </div>
+            </FadeInOnScroll>
         </div>
-    </div>     
+    </div>   
   )
 }
 

@@ -235,7 +235,7 @@ export const Kontak = () => {
         </div>
       </FadeInOnScroll>
       
-      <div className="flex flex-col md:flex-row flex-wrap my-8 md:ml-5 ml-3">
+      <div className="flex flex-col md:flex-row flex-wrap my-8 md:ml-5 ml-2">
         <div className="flex-1 flex flex-wrap gap-10 mb-8 md:mb-0">
           <FadeInOnScroll>
             <KontakCard 
@@ -253,7 +253,7 @@ export const Kontak = () => {
             <KontakCard 
               Icon={<AiTwotoneMail />}
               Title='Email'
-              Description='puskesmaswuasa@gmail.com'/>
+              Description='puskesmaswuasa @gmail.com'/>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <KontakCard 
@@ -349,7 +349,7 @@ export const Kontak = () => {
             <FadeInOnScroll>
               <button
                 type="submit"
-                className="w-full h-12 text-lg font-bold bg-blue-800 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full h-12 text-lg font-bold bg-blue-800 text-white py-2 px-4 rounded-md shadow-sm hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 Submit
               </button>

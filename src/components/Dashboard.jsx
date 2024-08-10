@@ -21,10 +21,7 @@ import { Link } from 'react-router-dom'
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx'
 import { DataCard } from '../container/DataCard.jsx';
 import Cardmember from '../container/Cardmember.jsx'
-import Inul from '../assets/inul.jpg'
-import Alief from '../assets/alief.jpg'
-import Mas from '../assets/mas al.jpg'
-import Jema from '../assets/jema.jpg'
+import images from '../assets/images.png'
 import Footer from '../components/Footer.jsx'
 
 const Dashboard =()=> {
@@ -83,7 +80,7 @@ const Dashboard =()=> {
                     <FadeInOnScroll>
                         <DataCard
                         Image={<GoPerson/>}
-                        Title='12+'
+                        Title='33+'
                         Description='Dokter dan Staff'/>
                     </FadeInOnScroll>
                     <FadeInOnScroll>
@@ -94,7 +91,7 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                    
                 </div>
-                <div className="max-w-full min-h-[80vh] border border-b-1 flex md:flex-row flex-col justify-evenly items-center md:ml-16 md:ml-3 ml-0 mt-14 text-blue-900">
+                <div className="max-w-full min-h-[80vh] border border-b-1 flex md:flex-row flex-col justify-evenly items-center md:ml-16 ml-3 md:mx-0 mx-5 mt-14 text-blue-900">
                     <div className="flex flex-col justify-center items-left">
                         <FadeInOnScroll>
                         <h1 className="font-bold text-2xl">Puskesmas Wuasa <br/> Menyediakan Layanan Medis</h1>
@@ -162,26 +159,22 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                     <FadeInOnScroll>
                         <div className="flex flex-row flex-wrap justify-center gap-8 ">
-                            <Cardmember
-                            Imagemember={Inul}
-                            Title='Inul Daratista'
-                            Description='Bendahara'
-                            />
-                            <Cardmember
-                            Imagemember={Alief}
-                            Title='Alief Surya Ningsih'
-                            Description='Sekretaris'
-                            />
-                            <Cardmember
-                            Imagemember={Mas}
-                            Title='Aldi Saputra'
-                            Description='Anggota 1'
-                            />
-                            <Cardmember
-                            Imagemember={Jema}
-                            Title='Jeremy Reinaldi Mansa'
-                            Description='Koordinator Desa'
-                            />
+                        <Cardmember 
+                        Imagemember={images}
+                        Title='Helvie Etmawati Gae, SKM'
+                        Description='Kepala Puskesmas Wuasa'/>
+                        <Cardmember 
+                        Imagemember={images}
+                        Title='drg. Diah Ayu Lestari A.M.'
+                        Description='Dokter Gigi'/>
+                        <Cardmember 
+                        Imagemember={images}
+                        Title='dr. David Matthew Toding'
+                        Description='Dokter'/>
+                        <Cardmember 
+                        Imagemember={images}
+                        Title='Marlisna Tolibo, SST'
+                        Description='Kepala Ruangan Kamar Bersalin'/>
                         </div>
                         </FadeInOnScroll>
                     </div>
