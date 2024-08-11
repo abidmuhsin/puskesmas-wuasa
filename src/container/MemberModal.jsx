@@ -13,7 +13,7 @@ const MemberModal = ({ isOpen, onRequestClose, member }) => {
       contentLabel="Member Detail"
       className="fixed inset-0 flex items-center justify-center p-4 bg-gray-800 bg-opacity-75"
     >
-      <div className="bg-white p-4 rounded-md shadow-lg max-w-lg w-full relative mt-28">
+      <div className="bg-white p-4 rounded-md shadow-lg max-w-lg w-full fixed mt-28 z-20">
         <button
           onClick={onRequestClose}
           className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl"

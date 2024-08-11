@@ -100,7 +100,7 @@ const Navbar = () => {
         </button>
       </div>
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} bg-gray-800 text-white`}>
-        <ul className="flex flex-col text-base font-bold relative z-20">
+        <ul className="flex flex-col text-base font-bold relative">
         <Link to="/"><li className={`py-4 px-8 hover:bg-blue-900 ${isActive('/') ? 'bg-blue-800' : 'bg-gray-800'}`}>
             Beranda
           </li></Link>
