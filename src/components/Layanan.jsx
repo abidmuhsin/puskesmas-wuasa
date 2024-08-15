@@ -478,7 +478,6 @@ export const Layanan = () => {
         <FadeInOnScroll>
           <h2 className=' mb-5 md:mx-0 mx-4 text-center'>Terdapat macam macam layanan yang ada di puskesmas desa wuasa</h2>
         </FadeInOnScroll>
-        <FadeInOnScroll>
           <div className='flex gap-8 flex-wrap justify-center mb-10'>
             <a href='#poliumum'>
             <CardLayanan
@@ -499,7 +498,6 @@ export const Layanan = () => {
               deskripsi='Poli Gigi adalah tempat pengobatan untuk Mulut dan Gigi' />
             </a>
           </div>
-        </FadeInOnScroll>
       </div>
       <div className='flex flex-col'>
         <FadeInOnScroll>

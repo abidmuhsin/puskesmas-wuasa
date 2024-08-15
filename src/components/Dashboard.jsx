@@ -30,9 +30,9 @@ const Dashboard =()=> {
             <FadeInOnScroll>
             <AutoSlider/>
             </FadeInOnScroll>
-            <section id="visi-misi" className='max-w-full min-h-[100vh] flex justify-center items-center'>
+            <section id="visi-misi" className='max-w-full min-h-[120vh] md:min-h-[100vh] flex justify-center items-center'>
                 <FadeInOnScroll>
-                <div className='h-[70vh] md:w-[80%] w-full md:mt-0 xs:mt-5 mt-16 flex flex-col justify-center items-left  gap-4 md:px-20 px-10 text-blue-900'>
+                <div className='h-[70vh] md:w-[80%] w-full md:mt-0 xs:mt-5 mt-16 flex flex-col justify-center items-left gap-4 md:px-20 px-10 text-blue-900'>
                     <h1 className='text-3xl text-blue-900 font-bold '>Puskesmas Wuasa Desa Wuasa</h1>
                     <p className=''>Puskesmas Wuasa adalah pusat kesehatan masyarakat yang berada di sekitar daerah desa wuasa</p>
                     <button className='flex items-left bg-blue-600 rounded-full w-fit px-8 py-3 text-white'><Link to="/aboutus">Selengkapnya</Link></button>
@@ -74,7 +74,7 @@ const Dashboard =()=> {
                     <FadeInOnScroll>
                         <DataCard
                         Image={<BsFillPersonFill/>}
-                        Title='356+'
+                        Title='2,4 juta+'
                         Description='Penanganan Pasien'/>
                     </FadeInOnScroll>
                     <FadeInOnScroll>

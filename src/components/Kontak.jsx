@@ -241,7 +241,7 @@ export const Kontak = () => {
             <KontakCard 
               Icon={<BiLocationPlus />}
               Title='Lokasi'
-              Description='Jl. Yos Sudarso No.9'/>
+              Description='Jl.Garuda No.361'/>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <KontakCard 

@@ -2,6 +2,7 @@
   "name": "puskesmas-wuasa",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://puskesmas-wuasa.site/",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="flex md:justify-evenly justify-center flex-wrap my-16 text-blue-900 ">
             <FadeInOnScroll>
-            <div className="md:w-full w-[50%] flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base ">
+            <div className="md:w-full flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base ">
                 <h1 className="font-bold">Link Cepat</h1>
                 <ul className="flex flex-col gap-2">
                 <li><HashLink to="/aboutus#jajaran-administrator" className="">Jajaran Administrator</HashLink></li>

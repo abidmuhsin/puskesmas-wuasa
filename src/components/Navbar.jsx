@@ -143,7 +143,7 @@ const Navbar = () => {
       </div>
       
       {/* Dropdown Menu for Mobile */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-blue-800 text-white w-full`}>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-blue-900 text-white w-full`}>
         <ul className="flex flex-col p-4">
           <li className="relative">
             <Link to='/'>
