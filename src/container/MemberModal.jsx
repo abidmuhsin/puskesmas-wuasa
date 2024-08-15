@@ -16,7 +16,7 @@ const MemberModal = ({ isOpen, onRequestClose, member }) => {
       <div className="bg-white p-4 rounded-md shadow-lg max-w-lg md:w-full w-[90%] fixed mt-28 z-20">
         <button
           onClick={onRequestClose}
-          className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl"
+          className="absolute top-2 right-2 text-white hover:text-blue-100 text-2xl px-2 bg-blue-900 hover:bg-blue-500 rounded-full"
         >
           &times;
         </button>

@@ -110,20 +110,23 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full border border-b-black bg-white text-blue-800 shadow-3xl sticky z-10 top-0'>
+    <div className='w-full border border-b-black bg-white text-blue-900 shadow-3xl sticky z-10 top-0'>
       <div className="flex justify-between items-center md:h-[12vh] h-[8vh] mx-8">
         <div className='flex items-center gap-2'>
           <img src={logoPuskesmas} alt="Logo Puskesmas" className='md:w-14 w-10 md:h-12 h-8' />
           <h1 className='text-sm font-bold md:text-xl'>Puskesmas Wuasa</h1>
         </div>
         <div className='hidden md:flex gap-5 items-center'>
+        <a href="https://maps.app.goo.gl/v5kK7NEFjqyNHquSA">
           <div className="flex items-center">
             <HiLocationMarker className="text-[7vh] rounded-md mx-3 border border-blue-800 p-1"/>
             <div>
               <h2 className="text-sm font-bold">Lokasi</h2>
               <p className="text-sm">Jl. Garuda No.361</p>
+              
             </div>
           </div>
+          </a>
           <div className="flex items-center ml-4">
             <BsFillTelephoneFill className="text-[7vh] rounded-md mx-3 border border-blue-800 p-2"/>
             <div>
@@ -143,27 +146,31 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-blue-800 text-white w-full`}>
         <ul className="flex flex-col p-4">
           <li className="relative">
+            <Link to='/'>
             <button 
               onClick={() => handleDropdown('beranda')} 
               className="text-white block py-1 px-4 hover:text-gray-300"
             >
               Beranda
             </button>
+            </Link>
             <div className={`absolute bg-white text-blue-800 mt-0 z-10 shadow-md ${activeDropdown === 'beranda' ? 'block' : 'hidden'} w-full`}>
               <ul className="py-1">
-                <li><HashLink to="/#visi-misi" className="block px-4 py-1 hover:bg-gray-200">Visi Misi</HashLink></li>
-                <li><HashLink to="/#layanan-medis" className="block px-4 py-1 hover:bg-gray-200">Layanan Medis</HashLink></li>
-                <li><HashLink to="/#timmedis" className="block px-4 py-1 hover:bg-gray-200">Tim Medis</HashLink></li>
+                <HashLink to="/#visi-misi" className="block px-4 py-1 hover:bg-gray-200"><li>Visi Misi</li></HashLink>
+                <HashLink to="/#layanan-medis" className="block px-4 py-1 hover:bg-gray-200"><li>Layanan Medis</li></HashLink>
+                <HashLink to="/#timmedis" className="block px-4 py-1 hover:bg-gray-200"><li>Tim Medis</li></HashLink>
               </ul>
             </div>
           </li>
           <li className="relative">
+            <Link to=''>
             <button 
               onClick={() => handleDropdown('tentangKami')} 
               className="text-white block py-1 px-4 hover:text-gray-300"
             >
               Tentang Kami
             </button>
+            </Link>
             <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'tentangKami' ? 'block' : 'hidden'} w-full`}>
               <ul className="py-1">
                 <li><HashLink to="/aboutus#jajaran-administrator" className="block px-4 py-1 hover:bg-gray-200">Jajaran Administrator</HashLink></li>
@@ -174,12 +181,14 @@ const Navbar = () => {
             </div>
           </li>
           <li className="relative">
+            <Link to='/layanan'>
             <button 
               onClick={() => handleDropdown('layanan')} 
               className="text-white block py-1 px-4 hover:text-gray-300"
             >
               Layanan
             </button>
+            </Link>
             <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'layanan' ? 'block' : 'hidden'} w-full`}>
               <ul className="py-1">
                 <li><HashLink to="/galeri-layanan" className="block px-4 py-1 hover:bg-gray-200">Galeri Layanan</HashLink></li>
