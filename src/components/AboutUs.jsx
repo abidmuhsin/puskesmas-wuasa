@@ -46,9 +46,9 @@ const AboutUs = () => {
                 <p className='text-center w-[70%] text-sm md:text-base'>Puskesmas Wuasa adalah pusat keseluruhan masyarakat yang berada di sekitar daerah desa wuasa yang dimanfaatkan sebagai konsultasi kesehatan dan pengobatan masyarakat</p>
             </div>
             </FadeInOnScroll>
-        <div className='flex flex-col justify-center items-center mt-10'>
+        <div id='jajaran-administrator' className='flex flex-col justify-center items-center mt-10'>
         <FadeInOnScroll>
-        <h1 className='text-2xl font-bold'>Jajaran Administrator</h1>
+        <h1  className='text-2xl font-bold'>Jajaran Administrator</h1>
         </FadeInOnScroll>
         <div className='flex gap-5 justify-center flex-wrap mt-8 '>
                 <Cardmember 
@@ -93,7 +93,7 @@ const AboutUs = () => {
                     Description='Staf TU'/>    
             </div>
       </div>
-      <div className='flex flex-col justify-center items-center mt-10'>
+      <div id='jajaran-dokter' className='flex flex-col justify-center items-center mt-10'>
         <h1 className='text-2xl font-bold'>Jajaran Dokter</h1>
         <div className='flex gap-5 justify-center mt-8 md:flex-row flex-col'>
                 <Cardmember 
@@ -106,7 +106,7 @@ const AboutUs = () => {
                     Description='Dokter'/>
             </div>
       </div>
-      <div className='flex flex-col justify-center items-center mt-10'>
+      <div id='jajaran-perawat' className='flex flex-col justify-center items-center mt-10'>
         <FadeInOnScroll>
         <h1 className='text-2xl font-bold'>Jajaran Perawat</h1>
         </FadeInOnScroll>
@@ -149,7 +149,7 @@ const AboutUs = () => {
                     Description='PJ UKS'/>
             </div>
       </div>
-      <div className='flex flex-col justify-center items-center mt-10'>
+      <div id='jajaran-bidan' className='flex flex-col justify-center items-center mt-10'>
         <FadeInOnScroll>
         <h1 className='text-2xl font-bold'>Jajaran Bidan</h1>
         </FadeInOnScroll>

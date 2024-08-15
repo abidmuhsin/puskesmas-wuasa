@@ -80,13 +80,13 @@
 // };
 
 // export default Navbar;
-
 import React, { useState } from 'react';
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logoPuskesmas from '../assets/logo-puskesmas.png';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,9 +101,17 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === menu ? '' : menu); // Toggle dropdown visibility
   };
 
+  const handleMouseEnter = (menu) => {
+    setActiveDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveDropdown('');
+  };
+
   return (
     <div className='w-full border border-b-black bg-white text-blue-800 shadow-3xl sticky z-10 top-0'>
-      <div className="flex justify-between items-center md:h-[10vh] h-[8vh] mx-8">
+      <div className="flex justify-between items-center md:h-[12vh] h-[8vh] mx-8">
         <div className='flex items-center gap-2'>
           <img src={logoPuskesmas} alt="Logo Puskesmas" className='md:w-14 w-10 md:h-12 h-8' />
           <h1 className='text-sm font-bold md:text-xl'>Puskesmas Wuasa</h1>
@@ -137,53 +145,53 @@ const Navbar = () => {
           <li className="relative">
             <button 
               onClick={() => handleDropdown('beranda')} 
-              className="text-white block py-2 px-4 hover:text-gray-300"
+              className="text-white block py-1 px-4 hover:text-gray-300"
             >
               Beranda
             </button>
-            <div className={`absolute bg-white text-blue-800 mt-2 shadow-md ${activeDropdown === 'beranda' ? 'block' : 'hidden'} w-full`}>
-              <ul className="py-2">
-                <li><Link to="/visi-misi" className="block px-4 py-2 hover:bg-gray-200">Visi Misi</Link></li>
-                <li><Link to="/layanan-medis" className="block px-4 py-2 hover:bg-gray-200">Layanan Medis</Link></li>
-                <li><Link to="/tim-medis" className="block px-4 py-2 hover:bg-gray-200">Tim Medis</Link></li>
+            <div className={`absolute bg-white text-blue-800 mt-0 z-10 shadow-md ${activeDropdown === 'beranda' ? 'block' : 'hidden'} w-full`}>
+              <ul className="py-1">
+                <li><HashLink to="/#visi-misi" className="block px-4 py-1 hover:bg-gray-200">Visi Misi</HashLink></li>
+                <li><HashLink to="/#layanan-medis" className="block px-4 py-1 hover:bg-gray-200">Layanan Medis</HashLink></li>
+                <li><HashLink to="/#timmedis" className="block px-4 py-1 hover:bg-gray-200">Tim Medis</HashLink></li>
               </ul>
             </div>
           </li>
           <li className="relative">
             <button 
               onClick={() => handleDropdown('tentangKami')} 
-              className="text-white block py-2 px-4 hover:text-gray-300"
+              className="text-white block py-1 px-4 hover:text-gray-300"
             >
               Tentang Kami
             </button>
-            <div className={`absolute bg-white text-blue-800 mt-2 shadow-md ${activeDropdown === 'tentangKami' ? 'block' : 'hidden'} w-full`}>
-              <ul className="py-2">
-                <li><Link to="/jajaran-administrator" className="block px-4 py-2 hover:bg-gray-200">Jajaran Administrator</Link></li>
-                <li><Link to="/jajaran-bidan" className="block px-4 py-2 hover:bg-gray-200">Jajaran Bidan</Link></li>
-                <li><Link to="/jajaran-dokter" className="block px-4 py-2 hover:bg-gray-200">Jajaran Dokter</Link></li>
-                <li><Link to="/jajaran-perawat" className="block px-4 py-2 hover:bg-gray-200">Jajaran Perawat</Link></li>
+            <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'tentangKami' ? 'block' : 'hidden'} w-full`}>
+              <ul className="py-1">
+                <li><HashLink to="/aboutus#jajaran-administrator" className="block px-4 py-1 hover:bg-gray-200">Jajaran Administrator</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-bidan" className="block px-4 py-1 hover:bg-gray-200">Jajaran Bidan</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-dokter" className="block px-4 py-1 hover:bg-gray-200">Jajaran Dokter</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-perawat" className="block px-4 py-1 hover:bg-gray-200">Jajaran Perawat</HashLink></li>
               </ul>
             </div>
           </li>
           <li className="relative">
             <button 
               onClick={() => handleDropdown('layanan')} 
-              className="text-white block py-2 px-4 hover:text-gray-300"
+              className="text-white block py-1 px-4 hover:text-gray-300"
             >
               Layanan
             </button>
-            <div className={`absolute bg-white text-blue-800 mt-2 shadow-md ${activeDropdown === 'layanan' ? 'block' : 'hidden'} w-full`}>
-              <ul className="py-2">
-                <li><Link to="/galeri-layanan" className="block px-4 py-2 hover:bg-gray-200">Galeri Layanan</Link></li>
-                <li><Link to="/jenis-layanan" className="block px-4 py-2 hover:bg-gray-200">Jenis Layanan</Link></li>
+            <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'layanan' ? 'block' : 'hidden'} w-full`}>
+              <ul className="py-1">
+                <li><HashLink to="/galeri-layanan" className="block px-4 py-1 hover:bg-gray-200">Galeri Layanan</HashLink></li>
+                <li><HashLink to="/jenis-layanan" className="block px-4 py-1 hover:bg-gray-200">Jenis Layanan</HashLink></li>
               </ul>
             </div>
           </li>
           <li>
-            <Link to="/tim-medis" className="block py-2 px-4 hover:text-gray-300">Tim Medis</Link>
+            <HashLink to="/tim-medis" className="block py-1 px-4 hover:text-gray-300">Tim Medis</HashLink>
           </li>
           <li>
-            <Link to="/kontak" className="block py-2 px-4 hover:text-gray-300">Kontak</Link>
+            <HashLink to="/kontak" className="block py-1 px-4 hover:text-gray-300">Kontak</HashLink>
           </li>
         </ul>
       </div>
@@ -191,56 +199,64 @@ const Navbar = () => {
       {/* Dropdown Menu for Web */}
       <div className='hidden md:flex bg-blue-800 text-white'>
         <ul className="flex gap-8 p-4">
-          <li className="relative">
-            <button 
-              onClick={() => handleDropdown('beranda')} 
-              className="text-white block py-2 px-4 hover:text-gray-300"
-            >
+          <li 
+            className="relative" 
+            onMouseEnter={() => handleMouseEnter('beranda')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link to='/'>
+            <button className="text-white block py-1 px-4 hover:text-gray-300">
               Beranda
             </button>
-            <div className={`absolute bg-white text-blue-800 mt-2 shadow-md ${activeDropdown === 'beranda' ? 'block' : 'hidden'} md:w-48`}>
-              <ul className="py-2">
-                <li><Link to="/visi-misi" className="block px-4 py-2 hover:bg-gray-200">Visi Misi</Link></li>
-                <li><Link to="/layanan-medis" className="block px-4 py-2 hover:bg-gray-200">Layanan Medis</Link></li>
-                <li><Link to="/tim-medis" className="block px-4 py-2 hover:bg-gray-200">Tim Medis</Link></li>
+            </Link>
+            <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'beranda' ? 'block' : 'hidden'} md:w-48`}>
+              <ul className="py-1">
+                <li><HashLink to="/#visi-misi" className="block px-4 py-1 hover:bg-gray-200">Visi Misi</HashLink></li>
+                <li><HashLink to="/#layanan-medis" className="block px-4 py-1 hover:bg-gray-200">Layanan Medis</HashLink></li>
+                <li><HashLink to="/#timmedis" className="block px-4 py-1 hover:bg-gray-200">Tim Medis</HashLink></li>
               </ul>
             </div>
           </li>
-          <li className="relative">
-            <button 
-              onClick={() => handleDropdown('tentangKami')} 
-              className="text-white block py-2 px-4 hover:text-gray-300"
-            >
+          <li 
+            className="relative" 
+            onMouseEnter={() => handleMouseEnter('tentangKami')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link to='/aboutus'>
+            <button className="text-white block py-1 px-4 hover:text-gray-300">
               Tentang Kami
             </button>
-            <div className={`absolute bg-white text-blue-800 mt-2 shadow-md ${activeDropdown === 'tentangKami' ? 'block' : 'hidden'} md:w-48`}>
-              <ul className="py-2">
-                <li><Link to="/jajaran-administrator" className="block px-4 py-2 hover:bg-gray-200">Jajaran Administrator</Link></li>
-                <li><Link to="/jajaran-bidan" className="block px-4 py-2 hover:bg-gray-200">Jajaran Bidan</Link></li>
-                <li><Link to="/jajaran-dokter" className="block px-4 py-2 hover:bg-gray-200">Jajaran Dokter</Link></li>
-                <li><Link to="/jajaran-perawat" className="block px-4 py-2 hover:bg-gray-200">Jajaran Perawat</Link></li>
+            </Link>
+            <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'tentangKami' ? 'block' : 'hidden'} md:w-48`}>
+              <ul className="py-1">
+                <li><HashLink to="/aboutus#jajaran-administrator" className="block px-4 py-1 hover:bg-gray-200">Jajaran Administrator</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-bidan" className="block px-4 py-1 hover:bg-gray-200">Jajaran Bidan</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-dokter" className="block px-4 py-1 hover:bg-gray-200">Jajaran Dokter</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-perawat" className="block px-4 py-1 hover:bg-gray-200">Jajaran Perawat</HashLink></li>
               </ul>
             </div>
           </li>
-          <li className="relative">
-            <button 
-              onClick={() => handleDropdown('layanan')} 
-              className="text-white block py-2 px-4 hover:text-gray-300"
-            >
+          <li 
+            className="relative" 
+            onMouseEnter={() => handleMouseEnter('layanan')}
+            onMouseLeave={handleMouseLeave}
+          ><Link to='/layanan'>
+            <button className="text-white block py-1 px-4 hover:text-gray-300">
               Layanan
             </button>
-            <div className={`absolute bg-white text-blue-800 mt-2 shadow-md ${activeDropdown === 'layanan' ? 'block' : 'hidden'} md:w-48`}>
-              <ul className="py-2">
-                <li><Link to="/galeri-layanan" className="block px-4 py-2 hover:bg-gray-200">Galeri Layanan</Link></li>
-                <li><Link to="/jenis-layanan" className="block px-4 py-2 hover:bg-gray-200">Jenis Layanan</Link></li>
+            </Link>
+            <div className={`absolute bg-white text-blue-800 mt-0 shadow-md ${activeDropdown === 'layanan' ? 'block' : 'hidden'} md:w-48`}>
+              <ul className="py-1">
+                <li><HashLink to="/layanan#galerilayanan" className="block px-4 py-1 hover:bg-gray-200">Galeri Layanan</HashLink></li>
+                <li><HashLink to="/layanan#jenislayanan" className="block px-4 py-1 hover:bg-gray-200">Jenis Layanan</HashLink></li>
               </ul>
             </div>
           </li>
           <li>
-            <Link to="/tim-medis" className="block py-2 px-4 hover:text-gray-300">Tim Medis</Link>
+            <Link to="/semua" className="block py-1 px-4 hover:text-gray-300">Tim Medis</Link>
           </li>
           <li>
-            <Link to="/kontak" className="block py-2 px-4 hover:text-gray-300">Kontak</Link>
+            <Link to="/kontak" className="block py-1 px-4 hover:text-gray-300">Kontak</Link>
           </li>
         </ul>
       </div>
@@ -249,4 +265,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

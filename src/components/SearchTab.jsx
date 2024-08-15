@@ -19,7 +19,7 @@ const SearchTab = () => {
   };
 
   return (
-    <div className="flex flex-col w-full justify-center items-end m-10">
+    <div className="flex flex-col w-full justify-center items-end m-2">
       <div className="w-full max-w-md mb-6">
         <div className="relative">
         <FadeInOnScroll>

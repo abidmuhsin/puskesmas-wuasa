@@ -297,7 +297,7 @@ export const Layanan = () => {
         </div>
       </FadeInOnScroll>
       {/* Galeri Layanan */}
-      <div className='flex flex-col items-center justify-center gap-2 mt-10'>
+      <div id='galerilayanan' className='flex flex-col items-center justify-center gap-2 mt-10'>
         <FadeInOnScroll>
           <p className='text-lg mt-5 text-center'>Galeri Layanan</p>
         </FadeInOnScroll>
@@ -466,7 +466,7 @@ export const Layanan = () => {
       </div>
       {/* Akhir Galeri Layanan */}
 
-      <div className='flex flex-col items-center justify-center gap-2 mt-10 bg-slate-200'>
+      <div id='jenislayanan' className='flex flex-col items-center justify-center gap-2 mt-10 bg-slate-200'>
         <FadeInOnScroll>
           <p className='text-lg mt-5'>Jenis Layanan</p>
         </FadeInOnScroll>

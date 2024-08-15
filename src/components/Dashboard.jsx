@@ -30,7 +30,7 @@ const Dashboard =()=> {
             <FadeInOnScroll>
             <AutoSlider/>
             </FadeInOnScroll>
-            <div className='max-w-full min-h-[100vh] flex justify-center items-center'>
+            <section id="visi-misi" className='max-w-full min-h-[100vh] flex justify-center items-center'>
                 <FadeInOnScroll>
                 <div className='h-[70vh] md:w-[80%] w-full md:mt-0 xs:mt-5 mt-16 flex flex-col justify-center items-left  gap-4 md:px-20 px-10 text-blue-900'>
                     <h1 className='text-3xl text-blue-900 font-bold '>Puskesmas Wuasa Desa Wuasa</h1>
@@ -63,7 +63,7 @@ const Dashboard =()=> {
                     </div>
                 </div>
                 </FadeInOnScroll>
-            </div>
+            </section>
                 <div className="bg-slate-300 max-w-full min-h-[30vh] flex flex-row flex-wrap items-center justify-evenly gap-8 md:mt-8 mt-0 py-5 md:py-0 text-blue-900">
                     <FadeInOnScroll>
                         <DataCard
@@ -91,7 +91,7 @@ const Dashboard =()=> {
                     </FadeInOnScroll>
                    
                 </div>
-                <div className="max-w-full min-h-[80vh] border border-b-1 flex md:flex-row flex-col justify-evenly items-center md:ml-16 ml-3 md:mx-0 mx-5 mt-14 text-blue-900">
+                <section id="layanan-medis" className="max-w-full min-h-[80vh] border border-b-1 flex md:flex-row flex-col justify-evenly items-center md:ml-16 ml-3 md:mx-0 mx-5 mt-14 text-blue-900">
                     <div className="flex flex-col justify-center items-left">
                         <FadeInOnScroll>
                         <h1 className="font-bold text-2xl">Puskesmas Wuasa <br/> Menyediakan Layanan Medis</h1>
@@ -139,8 +139,8 @@ const Dashboard =()=> {
                         </div>
                         </FadeInOnScroll>
                     </div>
-                </div>
-                <div className="max-w-full text-blue-900">
+                </section>
+                <section id="timmedis" className="max-w-full text-blue-900">
                     <FadeInOnScroll>
                         <h1 className="text-center font-bold text-3xl mt-20">Tim Medis <br/> Puskesmas Wuasa</h1>
                         <p className="text-center text-lg mt-3 mb-9">Tim Medis Lore Utara yang sangat berkualitas</p>
@@ -165,7 +165,7 @@ const Dashboard =()=> {
                         Description='Kepala Ruangan Kamar Bersalin'/>
                         </div>
                         </FadeInOnScroll>
-                    </div>
+                    </section>
                     <Footer/>
                     
         </div>
