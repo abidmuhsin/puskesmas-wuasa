@@ -212,7 +212,7 @@
 
 import React, { useState } from 'react'
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx'
-import dashboard from '../assets/dashboard.jpeg'
+import dashboard from '../assets/puskes2.jpg'
 import kpuskesmas from '../assets/rkepalapuskesmas.jpg'
 import loket from '../assets/loket.jpg'
 import ruanginap from '../assets/rawatinap.jpg'
@@ -224,6 +224,15 @@ import Poligigi from '../assets/poli-gigi.jpg'
 import Polianak from '../assets/poli-anak.jpg'
 import Footer from '../components/Footer.jsx'
 import Modal from 'react-modal';
+import imunsurvey from '../assets/Imunsurvey.jpg'
+import kamarbersalin from '../assets/kamarbersalin.jpg'
+import loketsuster from '../assets/loketsuster.jpg'
+import rkonseling from '../assets/rkonseling.jpg'
+import rlaboratorium from '../assets/rlaboratorium.jpg'
+import robat from '../assets/robat.jpg'
+import rperawatan from '../assets/rperawatan.jpg'
+import ruangusg from '../assets/ruangusg.jpg'
+import tatausaha from '../assets/tatausaha.jpg'
 
 export const Layanan = () => {
   const modalStyles = {
@@ -277,9 +286,9 @@ export const Layanan = () => {
   };
 
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen z-0'>
       <FadeInOnScroll>
-        <div className='relative max-w-full md:min-h-[75vh] min-h-[50vh] bg-cover bg-center ' style={{ backgroundImage: `url(${background})` }}>
+        <div className='relative max-w-full md:min-h-[75vh] min-h-[50vh] bg-cover bg-center z-0' style={{ backgroundImage: `url(${background})` }}>
           <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500 opacity-60"></div>
           <div className='z-10 relative flex flex-col justify-center items-center md:h-[73vh] h-[50vh] text-white gap-4'>
             <h1 className='md:text-[40px] text-[30px] font-bold'>Penyajian Layanan</h1>
@@ -290,48 +299,170 @@ export const Layanan = () => {
       {/* Galeri Layanan */}
       <div className='flex flex-col items-center justify-center gap-2 mt-10'>
         <FadeInOnScroll>
-          <p className='text-lg mt-5'>Galeri Layanan</p>
+          <p className='text-lg mt-5 text-center'>Galeri Layanan</p>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <h1 className='font-bold text-2xl md:mx-0 mx-4'>Galeri Layanan Puskesmas Desa Wuasa</h1>
+          <h1 className='font-bold text-2xl md:mx-0 mx-4 text-center'>Galeri Layanan Puskesmas Desa Wuasa</h1>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <h2 className='font-semibold mb-5 md:mx-0 mx-4'>Berikut adalah gambar-gambar terkait layanan yang kami sediakan:</h2>
+          <h2 className=' mb-5 md:mx-0 mx-4 text-center'>Berikut adalah gambar-gambar terkait layanan yang kami sediakan:</h2>
         </FadeInOnScroll>
-        <FadeInOnScroll>
-          <div className='flex gap-4 overflow-x-auto pb-4'>
+          <div className='flex gap-4 overflow-x-auto pb-4 md:w-[75%] w-[90%] m-auto'>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
             <img
               src={kpuskesmas}
               alt="Kepala Puskesmas"
-              className='cursor-pointer w-32 h-32 object-cover flex-shrink-0'
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
               onClick={() => openModal(kpuskesmas)}
             />
-            <img
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(kpuskesmas)}>Ruang Kepala Puskesmas</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
               src={loket}
               alt="Loket"
-              className='cursor-pointer w-32 h-32 object-cover flex-shrink-0'
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
               onClick={() => openModal(loket)}
             />
-            <img
+            <div className='absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(loket)}>Loket</div>
+            </div>
+            </FadeInOnScroll>
+            <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
               src={ruanginap}
               alt="Ruang Inap 1"
-              className='cursor-pointer w-32 h-32 object-cover flex-shrink-0'
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
               onClick={() => openModal(ruanginap)}
             />
-            <img
+            <div className='absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(ruanginap)}>Ruang Inap</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
               src={ruanginap2}
               alt="Ruang Inap 2"
-              className='cursor-pointer w-32 h-32 object-cover flex-shrink-0'
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
               onClick={() => openModal(ruanginap2)}
             />
-            <img
+            <div className='absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(ruanginap2)}>Ruang Inap</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
               src={ruanginap3}
               alt="Ruang Inap 3"
-              className='cursor-pointer w-32 h-32 object-cover flex-shrink-0'
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
               onClick={() => openModal(ruanginap3)}
             />
+            <div className='absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(ruanginap3)}>Ruang Inap</div>
           </div>
-        </FadeInOnScroll>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={imunsurvey}
+              alt="Kepala Puskesmas"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(imunsurvey)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(imunsurvey)}>Ruang Imunisasi dan Surveilans</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={kamarbersalin}
+              alt="Loket"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(kamarbersalin)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(kamarbersalin)}>Kamar Bersalin</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={loketsuster}
+              alt="Ruang Inap 1"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(loketsuster)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(loketsuster)}>Loket Suster</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={rkonseling}
+              alt="Ruang Inap 2"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(rkonseling)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(rkonseling)}>Ruang Konseling</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={rlaboratorium}
+              alt="Ruang Inap 3"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(rlaboratorium)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(rlaboratorium)}>Ruang Laboratorium</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={robat}
+              alt="Kepala Puskesmas"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(robat)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(robat)}>Ruang Obat</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={rperawatan}
+              alt="Loket"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(rperawatan)}
+            />
+            <div className='absolute inset-0  text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(rperawatan)}>Ruang Perawatan</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={ruangusg}
+              alt="Ruang Inap 1"
+              className='cursor-pointer md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(ruangusg)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(ruangusg)}>Ruang USG</div>
+          </div>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+          <div className='relative md:w-56 w-32 md:h-56 h-32 cursor-pointer flex-shrink-0'>
+          <img
+              src={tatausaha}
+              alt="Ruang Inap 2"
+              className='cursor-pointer text-center md:w-56 w-32 md:h-56 h-32 object-cover flex-shrink-0'
+              onClick={() => openModal(tatausaha)}
+            />
+            <div className='absolute inset-0 text-center bg-blue-500 bg-opacity-50 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity' onClick={() => openModal(tatausaha)}>Ruang Tata Usaha</div>
+          </div>
+          </FadeInOnScroll> 
+        </div>
       </div>
       {/* Akhir Galeri Layanan */}
 
@@ -340,31 +471,37 @@ export const Layanan = () => {
           <p className='text-lg mt-5'>Jenis Layanan</p>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <h1 className='font-bold text-2xl md:mx-0 mx-4'>Jenis Layanan Puskesmas Desa Wuasa</h1>
+          <h1 className='font-bold text-2xl md:mx-0 mx-4 text-center'>Jenis Layanan Puskesmas Desa Wuasa</h1>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <h2 className='font-semibold mb-5 md:mx-0 mx-4'>Terdapat macam macam layanan yang ada di puskesmas desa wuasa</h2>
+          <h2 className=' mb-5 md:mx-0 mx-4 text-center'>Terdapat macam macam layanan yang ada di puskesmas desa wuasa</h2>
         </FadeInOnScroll>
         <FadeInOnScroll>
           <div className='flex gap-8 flex-wrap justify-center mb-10'>
+            <a href='#poliumum'>
             <CardLayanan
               image={Poliumum}
               title='Poli Umum'
-              deskripsi='Poli Umum adalah tempat pengobatan' />
+              deskripsi='Poli Umum adalah tempat pengobatan kesehatan dasar' />
+            </a>
+            <a href='#polianak'>
             <CardLayanan
               image={Polianak}
               title='Poli Anak'
-              deskripsi='Poli Umum adalah tempat pengobatan' />
+              deskripsi='Poli Anak adalah tempat pengobatan untuk bayi dan anak sakit' />
+            </a>
+            <a href='#poligigi'>
             <CardLayanan
               image={Poligigi}
               title='Poli Gigi'
-              deskripsi='Poli Umum adalah tempat pengobatan' />
+              deskripsi='Poli Gigi adalah tempat pengobatan untuk Mulut dan Gigi' />
+            </a>
           </div>
         </FadeInOnScroll>
       </div>
       <div className='flex flex-col'>
         <FadeInOnScroll>
-          <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center md:gap-20 gap-5'>
+          <div id='poliumum' className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center md:gap-20 gap-5'>
             <div className='w-[50vh] h-[35vh] hidden md:flex'>
               <img src={Poliumum} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44' />
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>
@@ -377,7 +514,7 @@ export const Layanan = () => {
           </div>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
+          <div id='polianak' className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
             <div className='md:w-[30%] w-[80%] flex flex-col gap-1'>
               <p className='font-light text-lg'>Poli Anak</p>
               <h1 className='font-bold text-3xl'>Poli Anak</h1>
@@ -390,7 +527,7 @@ export const Layanan = () => {
           </div>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <div className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
+          <div id='poligigi' className='w-full flex md:h-[60vh] h-[30vh] justify-center items-center gap-20'>
             <div className='w-[50vh] h-[35vh] md:flex hidden'>
               <img src={Poligigi} alt="" className='bg-blue-500 rounded-tr-[15vh] border border-blue-500 border-4 w-[70vh] z-10 absolute left-44' />
               <div className='relative w-32 h-20 top-[30vh] right-36 bg-gradient-to-t from-blue-500 to-blue-400 rounded-bl-[6vh] rounded-tr-[6vh] z-10'></div>

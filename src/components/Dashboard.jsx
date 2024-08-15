@@ -26,7 +26,7 @@ import Footer from '../components/Footer.jsx'
 
 const Dashboard =()=> {
     return (
-        <div className='relative max-w-full h-[170vh] bg-center bg-cover'>
+        <div className='relative max-w-full h-[170vh] bg-center bg-cover z-[-1]'>
             <FadeInOnScroll>
             <AutoSlider/>
             </FadeInOnScroll>
@@ -119,35 +119,23 @@ const Dashboard =()=> {
                         </div>
                         </FadeInOnScroll>
                     </div>
-                    <div className="md:w-[40%] w-full md:h-[60vh] h-[40vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl md:mt-0 mt-10 ">
+                    <div className="md:w-[40%] w-full md:h-[50vh] h-[40vh] bg-gradient-to-t from-blue-700 to-blue-500 text-white flex flex-col items-left p-8 rounded-3xl md:mt-0 mt-10 ">
                         <FadeInOnScroll>
                         <h1 className="text-xl font-bold mb-2">Waktu Beroperasi</h1>
                         <p className="mb-3">Puskesmas Wuasa memiliki waktu beroperasi sebagai berikut:</p>
                         </FadeInOnScroll>
                         <FadeInOnScroll>
-                        <h1 className="font-bold">Senin - Kamis</h1>
+                        <h1 className="font-bold">Rawat Jalan</h1>
                         <div className="flex gap-2 items-center gap-2 my-1">
                             <AiOutlineClockCircle className="text-lg gap-2" />
-                            <p> Pagi : 08.00 - 12.00</p>
+                            <p> Senin - Sabtu : 08.00 - 14.00 </p>
                         </div>
                         </FadeInOnScroll>
                         <FadeInOnScroll>
-                        <div className="flex gap-2 items-center gap-2 my-1">
-                            <AiOutlineClockCircle className="text-lg" />
-                            <p> Siang : 13.00 - 17.00</p>
-                        </div>
-                        </FadeInOnScroll>
-                        <FadeInOnScroll>
-                        <h1 className="font-bold">Jumat - Sabtu</h1>
+                        <h1 className="font-bold">Rawat Inap</h1>
                         <div className="flex gap-2 items-center my-1">
                             <AiOutlineClockCircle className="text-lg" />
-                            <p> Pagi : 08.00 - 12.00</p>
-                        </div>
-                        </FadeInOnScroll>
-                        <FadeInOnScroll>
-                        <div className="flex gap-2 items-center my-1">
-                            <AiOutlineClockCircle className="text-lg" />
-                            <p> Siang : 15.00 - 18.00</p>
+                            <p> Setiap Hari</p>
                         </div>
                         </FadeInOnScroll>
                     </div>

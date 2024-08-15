@@ -1,8 +1,8 @@
 // AutoSlider.js
 import React, { useState, useEffect } from 'react';
-import dashboard from '../assets/dashboard.jpeg'
-import dashboard2 from '../assets/dashboard2.jpeg'
-import dashboard3 from '../assets/dashboard3.jpeg'
+import dashboard from '../assets/puskes2.jpg'
+import dashboard2 from '../assets/puskes1.jpg'
+import dashboard3 from '../assets/puskes3.jpg'
 
 const AutoSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

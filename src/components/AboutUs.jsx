@@ -4,11 +4,11 @@ import images from '../assets/images.png'
 import Cardmember from '../container/Cardmember.jsx';
 import background1 from '../assets/logo-puskesmas.png'
 import FadeInOnScroll from '../container/FadeInOnScroll.jsx';
-import background from '../assets/dashboard2.jpeg'
-import about from '../assets/dashboard.jpeg'
-import about2 from '../assets/dashboard2.jpeg'
-import about3 from '../assets/dashboard3.jpeg'
-import about4 from '../assets/dashboard-content.png'
+import background from '../assets/puskes2.jpg'
+import about from '../assets/puskes1.jpg'
+import about2 from '../assets/puskes3.jpg'
+import about3 from '../assets/puskes4.jpg'
+import about4 from '../assets/puskes5.jpg'
 import Footer from '../components/Footer.jsx'
 import { AiTwotonePhone } from "react-icons/ai"; 
 import { BiPhone } from "react-icons/bi"; 
@@ -25,7 +25,7 @@ const AboutUs = () => {
     ];
 
     return (
-        <div className="w-full h-screen">
+        <div className="w-full h-screen z-[-1]">
             <FadeInOnScroll>
             <div className='relative max-w-full md:min-h-[90vh] min-h-[50vh] bg-cover bg-center overflow-x-hidden ' style={{ backgroundImage: `url(${background})`}}>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-cyan-500  opacity-60"></div>

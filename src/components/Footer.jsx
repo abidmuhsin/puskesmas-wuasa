@@ -11,7 +11,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <div>
-        <div className="font-bold text-xl md:h-32 h-24 w-full flex flex-col md:flex-row justify-between items-center bg-slate-300 mt-9">
+        <div className="font-bold text-xl md:h-32 h-24 w-full flex flex-col md:flex-row justify-between items-center text-blue-900 bg-slate-300 mt-9">
             <FadeInOnScroll>
             <h1 className="ml-5 md:text-xl text-sm md:ml-16 mt-4 md:mt-0">Production by KKN 108 UNTAD Desa Wuasa</h1>
             </FadeInOnScroll>
@@ -23,9 +23,9 @@ const Footer = () => {
             </div>
             </FadeInOnScroll>
         </div>
-        <div className="flex md:justify-evenly justify-center flex-wrap my-16 ">
+        <div className="flex md:justify-evenly justify-center flex-wrap my-16 text-blue-900 ">
             <FadeInOnScroll>
-            <div className="md:w-[15%] w-[35%] flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base">
+            <div className="md:w-[15%] w-[50%] flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base">
                 <h1 className="font-bold">Link Cepat</h1>
                 <ul className="flex flex-col gap-2">
                     <li>Beranda</li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </ul>
             </div>
             </FadeInOnScroll>
-            <div className="md:w-[15%] w-[35%] h-[30vh] p-5 flex flex-col gap-4 text-sm md:text-base">
+            <div className="md:w-[15%] w-[50%] h-[30vh] p-5 flex flex-col gap-4 text-sm md:text-base md:items-start items-center">
                 <FadeInOnScroll>
                 <h1 className="font-bold">Halaman Lain</h1>
                 </FadeInOnScroll>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </ul>
                 </FadeInOnScroll>
             </div>
-            <div className="md:w-[15%] w-[35%] h-[30vh] p-5  flex flex-col gap-5 text-sm md:text-base">
+            <div className="md:w-[15%] w-[50%] h-[30vh] p-5  flex flex-col gap-4 text-sm md:text-base items-center">
                 <FadeInOnScroll>
                 <div className="flex gap-3 items-center md:flex-row flex-col">
                     <CiLocationOn className="text-3xl text-center"/>
@@ -85,7 +85,7 @@ const Footer = () => {
                 </FadeInOnScroll>
             </div>
         </div>           
-        <div className='flex items-center mx-8 gap-2 h-20 justify-between md:flex-row flex-col'>
+        <div className='flex items-center mx-8 gap-2 h-20 justify-between md:flex-row flex-col text-blue-900'>
             <div className="flex items-center">
             <FadeInOnScroll>
                 <img src={logoPuskesmas} alt="" className='w-18 h-14' />

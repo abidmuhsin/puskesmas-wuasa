@@ -194,7 +194,7 @@ import { AiFillClockCircle, AiTwotoneMail, AiFillPhone, AiTwotonePhone, AiFillYo
 import { BiLocationPlus, BiPhone } from "react-icons/bi"; 
 import { CiLocationOn } from "react-icons/ci"; 
 import { FaTiktok } from "react-icons/fa"; 
-import dashboard from '../assets/dashboard.jpeg'
+import dashboard from '../assets/puskes2.jpg'
 import KontakCard from '../container/KontakCard.jsx'
 import Map from '../container/Map.jsx';
 import React, { useState } from 'react';
