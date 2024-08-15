@@ -242,11 +242,13 @@ export const Layanan = () => {
       width: '80%',
       maxWidth: '800px',
       margin: 'auto',
+      height: '70%',
       top: '25vh',
       padding: '',
-      background: 'white',
+      background: 'none',
       borderRadius: '10px',
       overflow: 'hidden',
+      border: 'none'
     },
     overlay: {
       position: 'fixed',

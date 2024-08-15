@@ -163,7 +163,7 @@ const Navbar = () => {
             </div>
           </li>
           <li className="relative">
-            <Link to=''>
+            <Link to='/aboutus'>
             <button 
               onClick={() => handleDropdown('tentangKami')} 
               className="text-white block py-1 px-4 hover:text-gray-300"
@@ -197,16 +197,16 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <HashLink to="/tim-medis" className="block py-1 px-4 hover:text-gray-300">Tim Medis</HashLink>
+            <Link to="/tim-medis" className="block py-1 px-4 hover:text-gray-300">Tim Medis</Link>
           </li>
           <li>
-            <HashLink to="/kontak" className="block py-1 px-4 hover:text-gray-300">Kontak</HashLink>
+            <Link to="/kontak" className="block py-1 px-4 hover:text-gray-300">Kontak</Link>
           </li>
         </ul>
       </div>
 
       {/* Dropdown Menu for Web */}
-      <div className='hidden md:flex bg-blue-800 text-white'>
+      <div className='hidden md:flex bg-blue-900 text-white'>
         <ul className="flex gap-8 p-4">
           <li 
             className="relative" 

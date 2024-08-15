@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import dashboard from '../assets/puskes2.jpg'
 import dashboard2 from '../assets/puskes1.jpg'
 import dashboard3 from '../assets/puskes3.jpg'
+import { Link } from 'react-router-dom'
 
 const AutoSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,10 +48,14 @@ const AutoSlider = () => {
         <h1 className="text-4xl font-bold mb-4">Puskesmas Wuasa</h1>
         <p className="text-lg mb-8 w-[80%]">Puskesmas Wuasa adalah sebuah Pusat Kesehatan Masyarakat (Puskesmas) yang berlokasi di Wuasa, sebuah desa yang berada di wilayah Kabupaten Poso, Kecamatan Lore Utara, Indonesia..</p>
         <div className='flex gap-10'>
+          <Link to='/kontak'>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Kontak
           </button>
+          </Link>
+          <Link to='/aboutus'>
           <button className='bg-white hover:bg-slate-800 text-black hover:text-white font-bold py-2 px-4 rounded'>Pelajari</button>
+          </Link>
         </div>
       </div>
 

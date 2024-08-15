@@ -26,7 +26,7 @@ import Footer from '../components/Footer.jsx'
 
 const Dashboard =()=> {
     return (
-        <div className='relative max-w-full h-[170vh] bg-center bg-cover z-[-1]'>
+        <div className='relative max-w-full h-[170vh] bg-center bg-cover z-1'>
             <FadeInOnScroll>
             <AutoSlider/>
             </FadeInOnScroll>
@@ -96,7 +96,7 @@ const Dashboard =()=> {
                         <FadeInOnScroll>
                         <h1 className="font-bold text-2xl">Puskesmas Wuasa <br/> Menyediakan Layanan Medis</h1>
                         <p>Ada beberapa layanan yang disediakan oleh Puskesmas Wuasa Desa Wuasa</p>
-                        <button className="w-52 h-14 bg-blue-500 rounded-3xl text-white hover:bg-blue-800 my-5">Selengkapnya</button>
+                        <Link to='/layanan'><button className="w-52 h-14 bg-blue-500 rounded-3xl text-white hover:bg-blue-800 my-5">Selengkapnya</button></Link>
                         </FadeInOnScroll>
                         <FadeInOnScroll>
                         <div className="flex flex-col gap-5 font-semibold mt-4">

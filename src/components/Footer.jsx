@@ -7,6 +7,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { AiFillYoutube } from "react-icons/ai"; 
 import { FaDribbbleSquare, FaTiktok } from "react-icons/fa"; 
 import { AiOutlineInstagram } from "react-icons/ai"; 
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -25,30 +27,42 @@ const Footer = () => {
         </div>
         <div className="flex md:justify-evenly justify-center flex-wrap my-16 text-blue-900 ">
             <FadeInOnScroll>
-            <div className="md:w-[15%] w-[50%] flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base">
+            <div className="md:w-full w-[50%] flex flex-col h-[30vh] p-5 gap-4 text-sm md:text-base ">
                 <h1 className="font-bold">Link Cepat</h1>
                 <ul className="flex flex-col gap-2">
-                    <li>Beranda</li>
-                    <li>Beranda</li>
-                    <li>Beranda</li>
-                    <li>Beranda</li>
+                <li><HashLink to="/aboutus#jajaran-administrator" className="">Jajaran Administrator</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-bidan" className="">Jajaran Bidan</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-dokter" className="">Jajaran Dokter</HashLink></li>
+                <li><HashLink to="/aboutus#jajaran-perawat" className="">Jajaran Perawat</HashLink></li>
                 </ul>
             </div>
             </FadeInOnScroll>
-            <div className="md:w-[15%] w-[50%] h-[30vh] p-5 flex flex-col gap-4 text-sm md:text-base md:items-start items-center">
+            <div className="md:w-[20%] w-[50%] h-[30vh] p-5 flex flex-col gap-4 text-sm md:text-base md:items-start items-center">
                 <FadeInOnScroll>
                 <h1 className="font-bold">Halaman Lain</h1>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                 <ul className="flex flex-col gap-2 ">
-                    <li>Contact</li>
-                    <li>Contact</li>
-                    <li>Contact</li>
-                    <li>Contact</li>
+                    <Link to='/aboutus'>
+                        <button className="">
+                        Tentang Kami
+                        </button>
+                    </Link>
+                    <Link to='/layanan'>
+                        <button className="">
+                        Layanan
+                        </button>
+                    </Link>
+                    <li>
+                    <Link to="/semua" className="">Tim Medis</Link>
+                    </li>
+                    <li>
+                    <Link to="/kontak" className="">Kontak</Link>
+                    </li>
                 </ul>
                 </FadeInOnScroll>
             </div>
-            <div className="md:w-[15%] w-[50%] h-[30vh] p-5  flex flex-col gap-4 text-sm md:text-base items-center">
+            <div className="md:w-[20%] w-[50%] h-[30vh] p-5 flex flex-col gap-4 text-sm md:text-base items-start">
                 <FadeInOnScroll>
                 <div className="flex gap-3 items-center md:flex-row flex-col">
                     <CiLocationOn className="text-3xl text-center"/>
@@ -96,7 +110,7 @@ const Footer = () => {
             </div>
             <FadeInOnScroll>
             <div className='flex text-slate-600 mb-2'>
-                <h1 className="">Production by KKN 108 UNTAD Desa Wuasa</h1>
+                <h1 className="text-center" >Production by KKN Tematik IMM 108 UNTAD Desa Wuasa</h1>
             </div>
             </FadeInOnScroll>
         </div>
